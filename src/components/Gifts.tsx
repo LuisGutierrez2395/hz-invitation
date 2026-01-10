@@ -1,18 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Section } from './Section';
 import { Gift } from 'lucide-react';
 
 export const Gifts: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
-  
-  const iban = "ES00 0000 0000 00 0000000000";
-
-  const handleCopy = () => {
-    navigator.clipboard.writeText(iban);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
+  // All unused state variables (isOpen, copied) and functions (handleCopy) have been removed
 
   return (
     <Section id="gifts" className="text-center" withPattern>
