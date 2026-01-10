@@ -12,6 +12,9 @@ create table public.rsvp_responses (
   sin_lactosa boolean not null default false,
   otras_alergias text null,
   cancion_deseada text null,
+  nombre_completo_2 text null,
+  fun_fact_person_1 text null,
+  fun_fact_person_2 text null,
   constraint rsvp_responses_pkey primary key (id)
 );
 

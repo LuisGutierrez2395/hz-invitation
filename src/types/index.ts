@@ -1,14 +1,11 @@
 export interface RsvpFormData {
-  nombre_completo: string;
-  email?: string;
   asistira: 'si' | 'no' | 'no_se';
-  fiesta: boolean;
-  vegetariano: boolean;
-  sin_gluten: boolean;
-  vegano: boolean;
-  sin_lactosa: boolean;
+  nombre_completo: string;
+  nombre_completo_2: string; 
   otras_alergias?: string;
   cancion_deseada?: string;
+  fun_fact_person_1?: string;
+  fun_fact_person_2?: string;
 }
 
 export interface CountdownTime {

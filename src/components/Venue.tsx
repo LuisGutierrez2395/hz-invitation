@@ -51,7 +51,7 @@ END:VCALENDAR`;
         <div className="flex justify-center gap-4 my-6 text-sm text-text/80">
           <div className="flex items-center gap-1">
             <Calendar size={16} className="text-accent" />
-            <span>20 de junio de 2026</span>
+            <span>Saturday, 20 June 2026</span>
           </div>
           <div className="flex items-center gap-1">
             <Clock size={16} className="text-accent" />
