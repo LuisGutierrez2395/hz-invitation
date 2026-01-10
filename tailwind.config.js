@@ -6,10 +6,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#D4A5A5", // Dusty rose
-        secondary: "#F5F1ED", // Cream
-        text: "#6B5B5B", // Warm gray
-        accent: "#C9A982", // Gold
+        primary: "#0F766E", // Teal (petrol vibe)
+        secondary: "#F7F5F2", // Warm off-white
+        text: "#0F172A", // Slate-900 (clean, readable)
+        accent: "#c24d2c", // orange
       },
       fontFamily: {
         serif: ['"Cormorant Garamond"', "serif"],

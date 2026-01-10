@@ -35,8 +35,8 @@ END:VCALENDAR`;
 
   return (
     <Section id="venue" className="text-center" withPattern>
-      <h2 className="font-script text-4xl text-primary mb-2">El lugar</h2>
-      <p className="font-sans text-text/60 mb-8 uppercase tracking-widest text-xs">Dónde celebrar este momento especial</p>
+      <h2 className="font-script text-4xl text-primary mb-2">Location</h2>
+      <p className="font-sans text-text/60 mb-8 uppercase tracking-widest text-xs">Where we celebrate with you!</p>
       
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto border border-primary/20">
         <div className="flex justify-center mb-4">
@@ -46,7 +46,7 @@ END:VCALENDAR`;
         </div>
         
         <h3 className="font-serif text-2xl text-text mb-2">Bildungsgut Schmochtitz Sankt Benno</h3>
-        <p className="font-sans text-text/70 mb-1">Bautzen</p>
+        <p className="font-sans text-text/70 mb-1">Schmochtitz Nr. 1, 02625 Bautzen</p>
         
         <div className="flex justify-center gap-4 my-6 text-sm text-text/80">
           <div className="flex items-center gap-1">
@@ -67,14 +67,14 @@ END:VCALENDAR`;
             className="px-6 py-2 bg-primary text-white font-sans text-sm rounded-full hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
           >
             <MapPin size={16} />
-            Cómo llegar
+            How to get there
           </a>
           <button 
             onClick={handleAddToCalendar}
             className="px-6 py-2 border border-primary text-primary font-sans text-sm rounded-full hover:bg-primary/5 transition-colors flex items-center justify-center gap-2"
           >
             <Calendar size={16} />
-            Añadir al calendario
+            Add to Calendar
           </button>
         </div>
       </div>

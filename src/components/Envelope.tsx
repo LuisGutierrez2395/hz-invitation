@@ -46,10 +46,10 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onOpen }) => {
                initial={{ scale: 0.8, opacity: 0 }}
                animate={{ scale: 1, opacity: 1 }}
                transition={{ duration: 0.8 }}
-               className="relative w-full h-full bg-[#F5F1ED] shadow-2xl rounded-lg"
+               className="relative w-full h-full bg-[#b6cdbd] shadow-2xl rounded-lg"
              >
                 {/* Envelope Back */}
-                <div className="absolute inset-0 bg-[#E8E2D9] rounded-lg" />
+                <div className="absolute inset-0 bg-[#b6cdbd] rounded-lg" />
                 
                 {/* Letter inside */}
                 <motion.div
@@ -59,7 +59,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onOpen }) => {
                   className="absolute inset-x-2 top-2 bottom-2 bg-white shadow-sm p-6 flex flex-col items-center justify-center text-center z-[5]"
                 >
                    <h1 className="font-serif text-3xl text-primary mb-2">Luis & Nele</h1>
-                   <p className="font-script text-xl text-text">Save the Date</p>
+                   <p className="font-script text-xl text-text">We are getting married!</p>
                    <p className="font-sans text-xs mt-4 text-text/60">20 . 06 . 2026</p>
                 </motion.div>
 
@@ -79,11 +79,11 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onOpen }) => {
                    animate={isFlapOpen ? { rotateX: 180, zIndex: 0 } : { rotateX: 0, zIndex: 20 }}
                    transition={{ duration: 1.2, ease: "easeInOut" }}
                    style={{ transformOrigin: "top" }}
-                   className="absolute top-0 w-full h-0 border-l-[192px] border-r-[192px] border-t-[140px] border-l-transparent border-r-transparent border-t-[#D4A5A5] z-20 flex justify-center"
+                   className="absolute top-0 w-full h-0 border-l-[192px] border-r-[192px] border-t-[140px] border-l-transparent border-r-transparent border-t-[#b6cdbd] z-20 flex justify-center"
                  >
                     {/* Wax Seal */}
-                    <div className="absolute -top-[100px] w-20 h-20 rounded-full bg-[#C88A8A] shadow-lg flex items-center justify-center border-4 border-[#B07070]/30">
-                       <span className="font-script text-white text-3xl pt-1">J&K</span>
+                    <div className="absolute -top-[100px] w-20 h-20 rounded-full bg-[#c24d2c] shadow-lg flex items-center justify-center border-4 border-[#b6cdbd]/30">
+                       <span className="font-script text-white text-3xl pt-1">L&N</span>
                     </div>
                  </motion.div>
              </motion.div>

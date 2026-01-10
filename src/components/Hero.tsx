@@ -18,7 +18,7 @@ export const Hero: React.FC = () => {
           transition={{ delay: 0.5 }}
           className="font-script text-4xl md:text-5xl text-primary mb-6"
         >
-          Save the date
+          We are getting married!
         </motion.p>
         
         <motion.h1 
@@ -37,6 +37,7 @@ export const Hero: React.FC = () => {
           className="h-px w-24 bg-accent mx-auto my-6" 
         />
 
+        {/*
         <motion.p 
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -45,6 +46,7 @@ export const Hero: React.FC = () => {
         >
           ¡Nos casamos!
         </motion.p>
+        */}
         
         <motion.p 
           initial={{ opacity: 0 }}
@@ -52,7 +54,7 @@ export const Hero: React.FC = () => {
           transition={{ delay: 1.4 }}
           className="font-serif text-2xl md:text-3xl mt-6 text-text"
         >
-          20-06-2026
+          20.06.2026
         </motion.p>
       </div>
     </Section>

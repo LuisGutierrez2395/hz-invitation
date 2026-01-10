@@ -21,12 +21,12 @@ export const Countdown: React.FC = () => {
   return (
     <Section className="text-center my-8">
       <div className="bg-white/50 rounded-3xl p-8 mx-4 md:mx-0 shadow-sm border border-white/40">
-        <h2 className="font-script text-4xl text-text mb-8">Para el gran día</h2>
+        <h2 className="font-script text-4xl text-text mb-8">Time until the big day</h2>
         <div className="flex justify-center flex-wrap gap-y-4">
-          <TimeUnit value={days} label="Días" />
-          <TimeUnit value={hours} label="Horas" />
-          <TimeUnit value={minutes} label="Minutos" />
-          <TimeUnit value={seconds} label="Segundos" />
+          <TimeUnit value={days} label="Days" />
+          <TimeUnit value={hours} label="Hours" />
+          <TimeUnit value={minutes} label="Minutes" />
+          <TimeUnit value={seconds} label="Seconds" />
         </div>
       </div>
     </Section>

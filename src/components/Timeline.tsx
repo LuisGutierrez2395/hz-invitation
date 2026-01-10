@@ -5,19 +5,19 @@ import { motion } from 'framer-motion';
 
 export const Timeline: React.FC = () => {
   const events = [
-    { time: '2:00 pm', title: 'Llegada', icon: DoorOpen },
-    { time: '3:30 pm', title: 'Boda Civil', icon: Heart },
-    { time: '5:00 pm', title: 'Cóctel', icon: Wine },
-    { time: '7:00 pm', title: 'Cena', icon: Utensils },
-    { time: '9:00 pm', title: 'Primer baile', icon: Users },
-    { time: '10:00 pm', title: 'Fiesta', icon: Music },
-    { time: '3:00 am', title: 'Fin de fiesta', icon: Moon },
+    { time: '2:00 pm', title: 'Arrival', icon: DoorOpen },
+    { time: '3:30 pm', title: 'Civil Wedding', icon: Heart },
+    { time: '5:00 pm', title: 'Toast', icon: Wine },
+    { time: '7:00 pm', title: 'Dinner', icon: Utensils },
+    { time: '9:00 pm', title: 'First Dance', icon: Users },
+    { time: '10:00 pm', title: 'Party', icon: Music },
+    { time: '3:00 am', title: 'End of Party', icon: Moon },
   ];
 
   return (
     <Section id="timeline" className="text-center max-w-6xl mx-auto">
-      <h2 className="font-script text-4xl text-primary mb-2">Programación del día</h2>
-      <p className="font-sans text-text/60 mb-12 uppercase tracking-widest text-xs">Momentos especiales del gran día</p>
+      <h2 className="font-script text-4xl text-primary mb-2">Timeline</h2>
+      <p className="font-sans text-text/60 mb-12 uppercase tracking-widest text-xs">Special moments of the big day</p>
       
       <div className="relative mt-12">
         {/* Horizontal Line (Desktop) */}
