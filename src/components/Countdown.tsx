@@ -14,8 +14,8 @@ const TimeUnit = ({ value, label }: { value: number; label: string }) => (
 );
 
 export const Countdown: React.FC = () => {
-  // Target Date: March 28, 2026
-  const targetDate = new Date('2026-03-28T15:30:00');
+  // Target Date: June 20, 2026
+  const targetDate = new Date('2026-06-20T15:30:00');
   const { days, hours, minutes, seconds } = useCountdown(targetDate);
 
   return (

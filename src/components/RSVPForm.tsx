@@ -143,14 +143,14 @@ export const RSVPForm: React.FC = () => {
             animate={{ height: "auto", opacity: 1 }}
             className="space-y-6 pt-4 border-t border-primary/10"
           >
-            {/* Ceremonia Checkbox */}
+            {/* Fiesta Checkbox */}
             <label className="flex items-center space-x-3 cursor-pointer">
               <input
-                {...register('ceremonia')}
+                {...register('fiesta')}
                 type="checkbox"
                 className="rounded text-primary focus:ring-primary h-5 w-5"
               />
-              <span className="font-serif text-lg text-text">¿Nos acompañarás en la ceremonia?</span>
+              <span className="font-serif text-lg text-text">¿Nos acompañarás en la fiesta?</span>
             </label>
 
             {/* Alergias */}
@@ -188,14 +188,14 @@ export const RSVPForm: React.FC = () => {
           </motion.div>
         )}
 
-        {/* Comentarios */}
+        {/* Cancion deseada */}
         <div className="space-y-1">
-          <label className="block font-serif text-lg text-text">Comentarios adicionales</label>
+          <label className="block font-serif text-lg text-text">Canción deseada</label>
           <textarea
-            {...register('comentarios')}
+            {...register('cancion_deseada')}
             rows={3}
             className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-            placeholder="¿Algún mensaje para los novios?"
+            placeholder="Titulo de la canión y nombre del artista"
           />
         </div>
 

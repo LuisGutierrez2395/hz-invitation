@@ -5,13 +5,13 @@ create table public.rsvp_responses (
   nombre_completo text not null,
   email text null,
   asistira text not null check (asistira in ('si', 'no', 'no_se')),
-  ceremonia boolean not null default false,
+  fiesta boolean not null default false,
   vegetariano boolean not null default false,
   sin_gluten boolean not null default false,
   vegano boolean not null default false,
   sin_lactosa boolean not null default false,
   otras_alergias text null,
-  comentarios text null,
+  cancion_deseada text null,
   constraint rsvp_responses_pkey primary key (id)
 );
 

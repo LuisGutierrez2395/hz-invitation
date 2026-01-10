@@ -5,11 +5,11 @@ import { Section } from './Section';
 export const Venue: React.FC = () => {
   const handleAddToCalendar = () => {
     const event = {
-      title: 'Boda de Juan & Karla',
-      location: 'Hacienda de Cortés, Sevilla',
+      title: 'Boda de Luis & Nele',
+      location: 'Bildungsgut Schmochtitz Sankt Benno, Bautzen, Alemania',
       description: '¡Nos casamos! Esperamos contar con tu presencia.',
-      start: '20260328T153000',
-      end: '20260329T020000',
+      start: '20260620T153000',
+      end: '20260621T020000',
     };
     
     const icsContent = `BEGIN:VCALENDAR
@@ -27,7 +27,7 @@ END:VCALENDAR`;
     const url = window.URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', 'boda-juan-karla.ics');
+    link.setAttribute('download', 'boda-Luis-Nele.ics');
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -45,13 +45,13 @@ END:VCALENDAR`;
           </div>
         </div>
         
-        <h3 className="font-serif text-2xl text-text mb-2">Torre del Reloj</h3>
-        <p className="font-sans text-text/70 mb-1">Cartagena de Indias</p>
+        <h3 className="font-serif text-2xl text-text mb-2">Bildungsgut Schmochtitz Sankt Benno</h3>
+        <p className="font-sans text-text/70 mb-1">Bautzen</p>
         
         <div className="flex justify-center gap-4 my-6 text-sm text-text/80">
           <div className="flex items-center gap-1">
             <Calendar size={16} className="text-accent" />
-            <span>28 de marzo de 2026</span>
+            <span>20 de junio de 2026</span>
           </div>
           <div className="flex items-center gap-1">
             <Clock size={16} className="text-accent" />
@@ -61,7 +61,7 @@ END:VCALENDAR`;
         
         <div className="flex flex-col sm:flex-row gap-3 justify-center mt-6">
           <a 
-            href="https://maps.google.com/?q=Torre+del+Reloj,Cartagena+de+Indias" 
+            href="https://maps.app.goo.gl/8QrAwpc9QdeyCjW76" 
             target="_blank" 
             rel="noopener noreferrer"
             className="px-6 py-2 bg-primary text-white font-sans text-sm rounded-full hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
@@ -86,7 +86,7 @@ END:VCALENDAR`;
           height="100%" 
           frameBorder="0" 
           style={{ border: 0 }} 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3924.627346746538!2d-75.54796332398692!3d10.42158496495394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef62f98bd260659%3A0x442c75249590453d!2sTorre%20del%20Reloj!5e0!3m2!1ses!2sco!4v1710000000000!5m2!1ses!2sco"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2499.232230492109!2d14.35921877761542!3d51.214797471748334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47085418e638cd81%3A0x1a0d7b526fe099bc!2sBischof%20-%20Benno%20-%20Haus!5e0!3m2!1sen!2sde!4v1768045442759!5m2!1sen!2sde" 
           allowFullScreen
           title="Map"
         ></iframe>

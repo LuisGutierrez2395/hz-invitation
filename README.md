@@ -1,4 +1,4 @@
-# Boda de Juan & Karla - Wedding Website
+# Boda de Luis & Nele - Wedding Website
 
 An elegant wedding website built with React, TypeScript, Tailwind CSS, and Framer Motion.
 
