@@ -1,26 +1,25 @@
 import React from 'react';
 import { Section } from './Section';
-import { Hourglass, DoorOpen, Heart, Wine, Utensils, Users, Music, Moon } from 'lucide-react';
+import { Clock3, Heart, Martini, Utensils, Balloon, Music, CakeSlice } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Timeline: React.FC = () => {
   const events = [
-    { time: '2:00 pm', title: 'Arrival', icon: DoorOpen },
-    { time: '3:30 pm', title: 'Civil Wedding', icon: Heart },
-    { time: '5:00 pm', title: 'Toast', icon: Wine },
+    { time: '3:00 pm', title: 'Wedding ceremony', icon: Heart },
+    { time: '3:30 pm', title: 'Toast', icon: Martini },
+    { time: '4:00 pm', title: 'Coffe & Cake', icon: CakeSlice },
+    { time: '4:30 pm', title: 'Drinks & Games', icon: Balloon },
     { time: '7:00 pm', title: 'Dinner', icon: Utensils },
-    { time: '9:00 pm', title: 'First Dance', icon: Users },
-    { time: '10:00 pm', title: 'Party', icon: Music },
-    { time: '3:00 am', title: 'End of Party', icon: Moon },
+    { time: '9:00 pm', title: 'Party', icon: Music },
   ];
 
   return (
     <Section id="timeline" className="text-center max-w-6xl mx-auto">
-      <div className="flex justify-center mb-4">
-        <Hourglass className="text-primary w-8 h-8" />
+            <div className="flex justify-center mb-4">
+        <Clock3 className="text-primary w-8 h-8" />
       </div>
       <h2 className="font-script text-4xl text-primary mb-2">Timeline</h2>
-      <p className="font-sans text-text/60 mb-12 uppercase tracking-widest text-xs">Special moments of the big day</p>
+      <p className="font-sans text-text/60 mb-12 uppercase tracking-widest text-xs">Special moments of the day</p>
       
       <div className="relative mt-12">
         {/* Horizontal Line (Desktop) */}

@@ -78,10 +78,15 @@ export const RSVPForm: React.FC = () => {
           <div className="flex justify-center mb-4">
             <CheckCircle className="w-16 h-16 text-green-500" />
           </div>
-          <h2 className="font-serif text-3xl text-primary mb-4">Thanks!</h2>
-          <p className="font-sans text-text mb-6">
+
+          {/* Match section heading style */}
+          <h2 className="font-script text-4xl text-primary mb-2">Thanks!</h2>
+
+          {/* Match softer body text tone used elsewhere */}
+          <p className="font-sans text-text/80 mb-6">
             Your confirmation has been received. We look forward to celebrating with you!
           </p>
+
           <button
             onClick={() => window.location.reload()}
             className="text-primary underline font-sans text-sm hover:text-primary/80"
@@ -98,10 +103,11 @@ export const RSVPForm: React.FC = () => {
       <div className="flex justify-center mb-4">
         <MailQuestionMark className="text-primary w-8 h-8" />
       </div>
+
       <div className="text-center mb-10">
-        <h2 className="font-script text-4xl text-primary mb-2">Please let us know</h2>
+        <h2 className="font-script text-4xl text-primary mb-2">RSVP</h2>
         <p className="font-sans text-text/60 uppercase tracking-widest text-xs">
-          We hope you can join us, thank you!
+          We hope you can join us
         </p>
       </div>
 
@@ -109,9 +115,13 @@ export const RSVPForm: React.FC = () => {
         onSubmit={handleSubmit(onSubmit)}
         className="space-y-6 bg-white p-6 md:p-10 rounded-lg shadow-lg border border-primary/10"
       >
+        {/* Deadline notice */}
+        <p className="text-left font-sans font-bold text-text mb-6">
+          Please answer until 31.03.2026.
+        </p>
         {/* Attendance */}
         <div className="space-y-2">
-          <label className="block font-serif text-lg text-text">Will you be joining us? *</label>
+          <label className="block font-serif text-lg text-text">Will you be there?</label>
 
           <div className="space-y-2">
             <label className="flex items-center space-x-3 cursor-pointer p-3 border border-transparent hover:bg-secondary/30 rounded transition-colors">
@@ -121,7 +131,7 @@ export const RSVPForm: React.FC = () => {
                 value="si"
                 className="text-primary focus:ring-primary h-4 w-4"
               />
-              <span className="font-sans text-text">Yes!</span>
+              <span className="font-sans text-text">Yes</span>
             </label>
 
             <label className="flex items-center space-x-3 cursor-pointer p-3 border border-transparent hover:bg-secondary/30 rounded transition-colors">
@@ -147,14 +157,14 @@ export const RSVPForm: React.FC = () => {
             animate={{ height: "auto", opacity: 1 }}
             className="space-y-6 pt-4 border-t border-primary/10"
           >
-            {/* Sad message */}
-            <p className="font-serif text-lg text-text text-center">
+            {/* Sad message (match body text font + tone) */}
+            <p className="font-sans text-lg text-text/80 text-center">
               We’ll miss having you there, but we can't wait to catch up with you soon!
             </p>
 
             {/* Full Name (required) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Full Name</label>
+              <label className="block font-serif text-lg text-text">Full name</label>
               <input
                 {...register("nombre_completo", {
                   validate: (v) => (!!v?.trim() ? true : "Required"),
@@ -172,7 +182,6 @@ export const RSVPForm: React.FC = () => {
           </motion.div>
         )}
 
-
         {/* If YES -> show full section */}
         {asistiraValue === "si" && (
           <motion.div
@@ -182,7 +191,7 @@ export const RSVPForm: React.FC = () => {
           >
             {/* Person 1 (required) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Full Name (Person 1) *</label>
+              <label className="block font-serif text-lg text-text">Full name (Person 1)</label>
               <input
                 {...register("nombre_completo", {
                   validate: (v) => (!!v?.trim() ? true : "Required"),
@@ -198,13 +207,10 @@ export const RSVPForm: React.FC = () => {
 
             {/* Fun fact person 1 (required) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">
-                Fun fact (person 1) *
-              </label>
+              <label className="block font-serif text-lg text-text">Fun fact (Person 1)</label>
               <textarea
                 {...register("fun_fact_person_1", {
-                  validate: (v) =>
-                    !!v?.trim() || "This field is required",
+                  validate: (v) => !!v?.trim() || "This field is required",
                 })}
                 rows={3}
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
@@ -219,7 +225,7 @@ export const RSVPForm: React.FC = () => {
 
             {/* Person 2 (optional) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Full Name (Person 2)</label>
+              <label className="block font-serif text-lg text-text">Full name (Person 2)</label>
               <input
                 {...register("nombre_completo_2")}
                 type="text"
@@ -231,7 +237,7 @@ export const RSVPForm: React.FC = () => {
             {/* Fun fact person 2 (required if person 2 name is filled) */}
             <div className="space-y-1">
               <label className="block font-serif text-lg text-text">
-                Fun fact (person 2){person2Name?.trim() ? " *" : ""}
+                Fun fact (Person 2){person2Name?.trim() ? " *" : ""}
               </label>
               <textarea
                 {...register("fun_fact_person_2", {
@@ -249,9 +255,9 @@ export const RSVPForm: React.FC = () => {
               )}
             </div>
 
-            {/* Allergies / dietary needs */}
+            {/* Allergies */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Allergies or Dietary Needs</label>
+              <label className="block font-serif text-lg text-text">Allergies</label>
               <textarea
                 {...register("otras_alergias")}
                 rows={3}
@@ -262,7 +268,9 @@ export const RSVPForm: React.FC = () => {
 
             {/* Song wish (required) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">What song will get you on the dance floor? *</label>
+              <label className="block font-serif text-lg text-text">
+                Your song wish for the party
+              </label>
               <textarea
                 {...register("cancion_deseada", {
                   validate: (v) => (!!v?.trim() ? true : "Required"),
@@ -280,7 +288,7 @@ export const RSVPForm: React.FC = () => {
 
         {/* Error Message */}
         {submitStatus === "error" && (
-          <div className="p-3 bg-red-50 text-red-600 rounded flex items-center gap-2 text-sm">
+          <div className="p-3 bg-red-50 text-red-600 rounded flex items-center gap-2 text-sm font-sans">
             <AlertCircle size={16} />
             {errorMessage}
           </div>

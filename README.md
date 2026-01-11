@@ -1,4 +1,4 @@
-# Boda de Luis & Nele - Wedding Website
+# Nele & Luis - Wedding Website
 
 An elegant wedding website built with React, TypeScript, Tailwind CSS, and Framer Motion.
 

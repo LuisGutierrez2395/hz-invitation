@@ -15,7 +15,7 @@ export const Gifts: React.FC = () => {
       <p className="font-sans text-text/60 mb-6 uppercase tracking-widest text-xs">Your presence is our greatest gift</p>
       
       <p className="font-serif text-lg text-text max-w-xl mx-auto mb-8">
-        Should you wish to honor us with a gift, a contribution toward our honeymoon or our future together would be sincerely appreciated.
+        If you still would like to give us a present, a contribution towards our honeymoon or future together would be appreciated!
       </p>
 
     </Section>

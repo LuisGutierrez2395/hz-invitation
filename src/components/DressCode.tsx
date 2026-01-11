@@ -16,9 +16,21 @@ export const DressCode: React.FC = () => {
         What to wear
       </p>
 
-      <p className="font-serif text-lg text-text max-w-xl mx-auto">
-        Please dress formal. Our ceremony will take place on the lawn, followed by an indoor reception.
-      </p>
+      <div className="max-w-xl mx-auto space-y-6">
+        <p className="font-serif text-lg text-text">
+          The dress code for our wedding is <strong>semi-formal</strong>. We kindly encourage you to wear <strong>bright colours</strong> for our special day.
+        </p>
+
+        <p className="font-serif text-lg text-text">
+          <strong>Gentlemen:</strong> Suits or slacks with a colourful shirt and/or tie
+          <br />
+          <strong>Ladies:</strong> Cocktail dresses or dressy separates in a nice colour
+        </p>
+
+        <p className="font-serif text-lg text-text">
+          <strong>Please note:</strong> Our wedding ceremony will take place outdoors on grass, followed by an indoor reception.
+        </p>
+      </div>
     </Section>
   );
 };

@@ -11,6 +11,7 @@ import { Footer } from './components/Footer';
 import { Accommodation } from './components/Accommodation';
 import { Contact } from './components/Contact';
 import { DressCode } from './components/DressCode';
+import { Directions } from './components/Directions';
 
 
 
@@ -30,9 +31,10 @@ function App() {
           <Hero />
           <Countdown />
           <Venue />
+          <Directions />
           <Accommodation />
-          <DressCode />
           <Timeline />
+          <DressCode />
           <Gifts />
           <Contact />
           <RSVPForm />
