@@ -8,14 +8,12 @@ import { Timeline } from './components/Timeline';
 import { Gifts } from './components/Gifts';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
-import { AudioPlayer } from './components/AudioPlayer';
 
 function App() {
   const [contentVisible, setContentVisible] = useState(false);
 
   return (
     <div className="min-h-screen bg-secondary overflow-x-hidden">
-      <AudioPlayer />
       <Envelope onOpen={() => setContentVisible(true)} />
       
       {contentVisible && (
