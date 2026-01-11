@@ -5,9 +5,9 @@ import { Section } from './Section';
 export const Venue: React.FC = () => {
   const handleAddToCalendar = () => {
     const event = {
-      title: 'Boda de Nele & Luis',
-      location: 'Bildungsgut Schmochtitz Sankt Benno, Bautzen, Alemania',
-      description: '¡Nos casamos! Esperamos contar con tu presencia.',
+      title: 'Wedding Nele & Luis',
+      location: 'Bildungsgut Schmochtitz Sankt Benno, Bautzen, Germany',
+      description: 'We are getting married! We are excited to celebrate with you!',
       start: '20260620T153000',
       end: '20260621T020000',
     };
@@ -35,16 +35,15 @@ END:VCALENDAR`;
 
   return (
     <Section id="venue" className="text-center" withPattern>
+      <div className="flex justify-center mb-4">
+        <MapPin className="text-primary w-8 h-8" />
+      </div>
+
       <h2 className="font-script text-4xl text-primary mb-2">Location</h2>
       <p className="font-sans text-text/60 mb-8 uppercase tracking-widest text-xs">Where we celebrate with you!</p>
       
       <div className="bg-white p-8 rounded-lg shadow-md max-w-md mx-auto border border-primary/20">
-        <div className="flex justify-center mb-4">
-          <div className="bg-secondary p-4 rounded-full">
-            <MapPin className="text-primary w-8 h-8" />
-          </div>
-        </div>
-        
+      
         <h3 className="font-serif text-2xl text-text mb-2">Bildungsgut Schmochtitz Sankt Benno</h3>
         <p className="font-sans text-text/70 mb-1">Schmochtitz Nr. 1, 02625 Bautzen</p>
         

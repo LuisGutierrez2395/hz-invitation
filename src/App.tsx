@@ -8,6 +8,11 @@ import { Timeline } from './components/Timeline';
 import { Gifts } from './components/Gifts';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
+import { Accommodation } from './components/Accommodation';
+import { Contact } from './components/Contact';
+import { DressCode } from './components/DressCode';
+
+
 
 function App() {
   const [contentVisible, setContentVisible] = useState(false);
@@ -25,8 +30,11 @@ function App() {
           <Hero />
           <Countdown />
           <Venue />
+          <Accommodation />
+          <DressCode />
           <Timeline />
           <Gifts />
+          <Contact />
           <RSVPForm />
           <Footer />
         </motion.main>

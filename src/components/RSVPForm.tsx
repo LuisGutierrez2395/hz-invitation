@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { supabase } from "../supabase";
 import { Section } from "./Section";
 import type { RsvpFormData } from "../types";
-import { Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import { MailQuestionMark, Loader2, CheckCircle, AlertCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export const RSVPForm: React.FC = () => {
@@ -95,6 +95,9 @@ export const RSVPForm: React.FC = () => {
 
   return (
     <Section id="rsvp" className="max-w-2xl" withPattern>
+      <div className="flex justify-center mb-4">
+        <MailQuestionMark className="text-primary w-8 h-8" />
+      </div>
       <div className="text-center mb-10">
         <h2 className="font-script text-4xl text-primary mb-2">Please let us know</h2>
         <p className="font-sans text-text/60 uppercase tracking-widest text-xs">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from './Section';
-import { DoorOpen, Heart, Wine, Utensils, Users, Music, Moon } from 'lucide-react';
+import { Hourglass, DoorOpen, Heart, Wine, Utensils, Users, Music, Moon } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export const Timeline: React.FC = () => {
@@ -16,6 +16,9 @@ export const Timeline: React.FC = () => {
 
   return (
     <Section id="timeline" className="text-center max-w-6xl mx-auto">
+      <div className="flex justify-center mb-4">
+        <Hourglass className="text-primary w-8 h-8" />
+      </div>
       <h2 className="font-script text-4xl text-primary mb-2">Timeline</h2>
       <p className="font-sans text-text/60 mb-12 uppercase tracking-widest text-xs">Special moments of the big day</p>
       
