@@ -5,7 +5,7 @@ import { Section } from './Section';
 export const Venue: React.FC = () => {
   const handleAddToCalendar = () => {
     const event = {
-      title: 'Boda de Luis & Nele',
+      title: 'Boda de Nele & Luis',
       location: 'Bildungsgut Schmochtitz Sankt Benno, Bautzen, Alemania',
       description: '¡Nos casamos! Esperamos contar con tu presencia.',
       start: '20260620T153000',
