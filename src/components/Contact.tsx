@@ -17,7 +17,7 @@ export const Contact: React.FC = () => {
       </p>
 
       <p className="font-serif text-lg text-text max-w-xl mx-auto mb-6">
-        For any questions, don't hesitate to reach out to us directly. 
+        For any questions, don't hesitate to reach out to Nele or Luis directly. 
         To help coordinate wedding games and activities, please contact:
       </p>
 

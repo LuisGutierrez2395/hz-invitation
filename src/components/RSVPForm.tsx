@@ -91,7 +91,7 @@ export const RSVPForm: React.FC = () => {
             onClick={() => window.location.reload()}
             className="text-primary underline font-sans text-sm hover:text-primary/80"
           >
-            Send another response
+            Go back to start
           </button>
         </motion.div>
       </Section>
@@ -214,7 +214,7 @@ export const RSVPForm: React.FC = () => {
                 })}
                 rows={3}
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="For our game we need you to tell us something fun about yourself."
+                placeholder="Give us a fun fact about you! We’re using these for a surprise game that day."
               />
               {errors.fun_fact_person_1 && (
                 <span className="text-red-500 text-xs font-sans">
@@ -257,7 +257,7 @@ export const RSVPForm: React.FC = () => {
 
             {/* Allergies */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Allergies</label>
+              <label className="block font-serif text-lg text-text">Allergies and dietary restrictions</label>
               <textarea
                 {...register("otras_alergias")}
                 rows={3}

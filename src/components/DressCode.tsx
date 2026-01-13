@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section } from './Section';
-import { Shirt } from 'lucide-react';
+import { Shirt, Mars, Venus } from 'lucide-react';
 
 export const DressCode: React.FC = () => {
   return (
@@ -21,10 +21,16 @@ export const DressCode: React.FC = () => {
           The dress code for our wedding is <strong>semi-formal</strong>. We kindly encourage you to wear <strong>bright colours</strong> for our special day.
         </p>
 
-        <p className="font-serif text-lg text-text">
-          <strong>Gentlemen:</strong> Suits or slacks with a colourful shirt and/or tie
-          <br />
-          <strong>Ladies:</strong> Cocktail dresses or dressy separates in a nice colour
+        <p className="font-serif text-lg text-text space-y-2">
+          <span className="flex items-center justify-center gap-2">
+            <Mars className="w-5 h-5 text-primary" />
+            <span>Suits or slacks with a colourful shirt and/or tie</span>
+          </span>
+
+          <span className="flex items-center justify-center gap-2">
+            <Venus className="w-5 h-5 text-primary" />
+            <span>Cocktail dresses or dressy separates in a nice colour</span>
+          </span>
         </p>
 
         <p className="font-serif text-lg text-text">

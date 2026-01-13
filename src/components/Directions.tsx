@@ -11,7 +11,7 @@ export const Directions: React.FC = () => {
 
       <h2 className="font-script text-4xl text-primary mb-2">Directions</h2>
       <p className="font-sans text-text/60 mb-6 uppercase tracking-widest text-xs">
-        How to get there
+        How to arrive
       </p>
 
       <div className="max-w-xl mx-auto text-left space-y-8">
@@ -58,7 +58,7 @@ export const Directions: React.FC = () => {
               Travel time: ~60–75 min
             </p>
             <p className="font-serif text-lg text-text mt-2">
-              Take RE1/RB60 from Dresden until Bautzen and take a taxi from Bautzen station to location (~10km).
+              Take RE1/RB60 from Dresden until Bautzen and take a taxi from Bautzen station to location (~10 km).
             </p>
           </div>
         </div>
