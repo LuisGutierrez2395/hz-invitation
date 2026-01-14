@@ -2,8 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { Section } from "./Section";
+import { useTranslation } from "react-i18next";
 
 export const Hero: React.FC = () => {
+  const { t } = useTranslation();
+
   const scrollToRSVP = () => {
     const el = document.getElementById("rsvp");
     if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -24,7 +27,7 @@ export const Hero: React.FC = () => {
           transition={{ delay: 0.5 }}
           className="font-script text-4xl md:text-5xl text-primary mb-6"
         >
-          We are getting married!
+          {t("hero.tagline")}
         </motion.p>
 
         <motion.h1
@@ -33,7 +36,8 @@ export const Hero: React.FC = () => {
           transition={{ delay: 0.8, duration: 0.8 }}
           className="font-serif text-5xl md:text-7xl tracking-widest text-text mb-4"
         >
-          Nele <span className="text-accent">&</span> Luis
+          {t("hero.couple.left")} <span className="text-accent">&</span>{" "}
+          {t("hero.couple.right")}
         </motion.h1>
 
         <motion.div
@@ -53,9 +57,6 @@ export const Hero: React.FC = () => {
         </motion.p>
       </div>
 
-
-
-
       {/* RSVP Scroll Button (integrated) */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
@@ -71,10 +72,10 @@ export const Hero: React.FC = () => {
             text-primary hover:text-primary/80
             transition-colors
           "
-          aria-label="Scroll to RSVP section"
+          aria-label={t("hero.scrollToRsvpAria")}
         >
           <span className="font-script text-4xl text-primary mb-2">
-            RSVP
+            {t("common.rsvp")}
           </span>
 
           <ChevronDown className="w-8 h-8 animate-bounce" />

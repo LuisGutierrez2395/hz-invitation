@@ -1,0 +1,177 @@
+{
+
+    "_comment_envelope": "ENVELOPE",
+    "envelope": {
+    "tagline": "We are getting married!",
+    "date": "20 . 06 . 2026"
+  },
+
+  "_comment_common": "Shared labels used across multiple components",
+  "common": {
+    "rsvp": "RSVP"
+  },
+
+  "_comment_hero": "HERO Section",
+  "hero": {
+    "tagline": "We are getting married!",
+    "scrollToRsvpAria": "Scroll to RSVP section",
+    "couple": {
+      "left": "Nele",
+      "right": "Luis"
+    }
+  },
+
+  "_comment_countdown": "COUNTDOWN Section",
+  "countdown": {
+    "title": "Countdown",
+    "subtitle": "Time until the big day",
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+
+  "_comment_venue": "VENUE Section",
+  "venue": {
+    "title": "Location",
+    "subtitle": "Where we celebrate with you",
+    "timeDisplay": "3:00 pm",
+    "gettingThere": "Getting there",
+    "addToCalendar": "Add to Calendar",
+    "calendarEvent": {
+      "title": "Wedding Nele & Luis",
+      "location": "Bildungsgut Schmochtitz Sankt Benno, Bautzen, Germany",
+      "description": "We are getting married! We are excited to celebrate with you!",
+      "filename": "wedding-Nele-Luis.ics"
+    }
+  },
+ 
+  "_comment_directions": "DIRECTIONS",
+  "directions": {
+    "title": "Directions",
+    "subtitle": "How to arrive",
+    "travelTimeLabel": "Travel time",
+    "byCarFromDresden": {
+      "title": "By car from Dresden",
+      "travelTime": "~45–60 min",
+      "description": "Take A4 until exit Salzenforst, follow signage to Schmochtitz."
+    },
+    "byCarFromBautzen": {
+      "title": "By car from Bautzen",
+      "travelTime": "~10–15 min",
+      "description": "Take S111 until Dreistern, turn right onto S106, follow signage to Schmochtitz."
+    },
+    "byTrainFromDresden": {
+      "title": "By train from Dresden",
+      "travelTime": "~60–75 min",
+      "description": "Take RE1/RB60 from Dresden until Bautzen and take a taxi from Bautzen station to location (~10km)."
+    },
+    "parking": {
+      "title": "Parking",
+      "description": "Free parking is available, look for signage on site."
+    }
+  },
+
+  "_comment_accommodation": "ACCOMMODATION",
+  "accommodation": {
+    "title": "Accommodation",
+    "subtitle": "Where to stay",
+    "descriptionPrimary": "We recommend the on-site rooms at the location.<br />A quota has been reserved under our name until <strong>{{date}}</strong>.<br />Please make your bookings individually.",
+    "bookOnSite": "Book on-site rooms",
+    "descriptionSecondary": "Otherwise, we recommend staying in <strong>Bautzen</strong> or <strong>Dresden</strong>."
+  },
+
+    "_comment_timeline": "TIMELINE",
+    "timeline": {
+    "title": "Timeline",
+    "subtitle": "Special moments of the day",
+    "events": {
+      "arrival": "Arrival",
+      "ceremony": "Wedding ceremony",
+      "toast": "Toast",
+      "coffeeCake": "Coffee & Cake",
+      "drinksGames": "Drinks & Games",
+      "dinner": "Dinner",
+      "party": "Party"
+    }
+  },
+
+  "_comment_dressCode": "DRESS CODE",
+  "dressCode": {
+    "title": "Dress code",
+    "subtitle": "What to wear",
+    "intro": "The dress code for our wedding is <strong>semi-formal</strong>.<br />We kindly encourage you to wear <strong>bright colours</strong> for our special day.",
+    "men": "Suits or slacks with a colourful shirt and/or tie",
+    "women": "Cocktail dresses or dressy separates in a nice colour",
+    "note": "<strong>Please note:</strong> Our wedding ceremony will take place outdoors on grass, followed by an indoor reception."
+  },
+
+  "_comment_gifts": "GIFTS",
+  "gifts": {
+    "title": "Gifts",
+    "subtitle": "Your presence is our greatest gift",
+    "description": "If you still would like to give us a present, a contribution towards our travel funds would be highly appreciated!"
+  },
+
+  "_comment_contact": "CONTACT",
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Happy to help",
+    "intro": "For any questions, don't hesitate to reach out to Nele or Luis directly.<br />To help coordinate wedding games and activities, please contact:",
+    "maidOfHonor": "Maid of honor",
+    "bestMan": "Best man"
+  },
+  "_comment_rsvp": "RSVP FORM",
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "We hope you can join us",
+    "deadline": "Please answer until {{date}}.",
+    "attendance": {
+      "label": "Will you be there?",
+      "yes": "Yes",
+      "no": "No",
+      "sadMessage": "We’ll miss having you there, but we can't wait to catch up with you soon!"
+    },
+    "fields": {
+      "fullNameSingleLabel": "Full name",
+      "fullNamePerson1Label": "Full name (Person 1)",
+      "fullNamePerson2Label": "Full name (Person 2)",
+      "fullNamePlaceholder": "First and last name",
+      "person2Placeholder": "Add partner or plus one (optional)",
+      "funFactPerson1Label": "Fun fact (Person 1)",
+      "funFactPerson2Label": "Fun fact (Person 2)",
+      "funFactPlaceholder": "Give us a fun fact about you! We’re using these for a surprise game that day.",
+      "allergiesLabel": "Allergies and dietary restrictions",
+      "allergiesPlaceholder": "Please specify...",
+      "songWishLabel": "Your song wish for the party",
+      "songWishPlaceholder": "Song title and artist"
+    },
+    "validation": {
+      "selectOne": "Please select one",
+      "required": "Required",
+      "requiredField": "This field is required",
+      "requiredIfPerson2": "Required if Person 2 is provided"
+    },
+    "submit": {
+      "sending": "Sending...",
+      "sendConfirmation": "✉️ Send confirmation"
+    },
+    "errors": {
+      "generic": "There was an error. Please, try again."
+    },
+    "success": {
+      "title": "Thanks!",
+      "message": "Your confirmation has been received. We look forward to celebrating with you!",
+      "back": "Go back to start"
+    }
+  },
+
+ "_comment_footer": "FOOTER",
+  "footer": {
+    "madeWithLove": "Self-made with <heart /> for our wedding"
+  }
+
+
+
+
+}

@@ -1,0 +1,175 @@
+{
+    "_comment_envelope": "ENVELOPE",
+    "envelope": {
+    "tagline": "Wir heiraten!",
+    "date": "20 . 06 . 2026"
+  },
+    
+    "_comment_common": "Shared labels used across multiple components",
+    "common": {
+    "rsvp": "RSVP"
+  },
+  "_comment_hero": "HERO",
+  "hero": {
+    "tagline": "Wir heiraten!",
+    "scrollToRsvpAria": "Zum RSVP-Abschnitt scrollen",
+    "couple": {
+      "left": "Nele",
+      "right": "Luis"
+    }
+  },
+  "_comment_countdown": "COUNTDOWN",
+  "countdown": {
+    "title": "Countdown",
+    "subtitle": "Zeit bis zum großen Tag",
+    "days": "Tage",
+    "hours": "Stunden",
+    "minutes": "Minuten",
+    "seconds": "Sekunden"
+  },
+
+"_comment_venue": "VENUE",
+  "venue": {
+    "title": "Location",
+    "subtitle": "Hier feiern wir mit euch",
+    "timeDisplay": "15:00 Uhr",
+    "gettingThere": "Anfahrt",
+    "addToCalendar": "Zum Kalender hinzufügen",
+    "calendarEvent": {
+      "title": "Hochzeit Nele & Luis",
+      "location": "Bildungsgut Schmochtitz Sankt Benno, Bautzen, Deutschland",
+      "description": "Wir heiraten! Wir freuen uns riesig, diesen Tag mit euch zu feiern!",
+      "filename": "hochzeit-Nele-Luis.ics"
+    }
+  },
+
+    "_comment_directions": "DIRECTIONS",
+  "directions": {
+    "title": "Anreise",
+    "subtitle": "So kommt ihr hin",
+    "travelTimeLabel": "Fahrzeit",
+    "byCarFromDresden": {
+      "title": "Mit dem Auto aus Dresden",
+      "travelTime": "~45–60 Min.",
+      "description": "Über die A4 bis zur Ausfahrt Salzenforst, dann der Beschilderung nach Schmochtitz folgen."
+    },
+    "byCarFromBautzen": {
+      "title": "Mit dem Auto aus Bautzen",
+      "travelTime": "~10–15 Min.",
+      "description": "Über die S111 bis Dreistern, rechts auf die S106 abbiegen, dann der Beschilderung nach Schmochtitz folgen."
+    },
+    "byTrainFromDresden": {
+      "title": "Mit dem Zug aus Dresden",
+      "travelTime": "~60–75 Min.",
+      "description": "Mit RE1/RB60 von Dresden bis Bautzen fahren und von dort mit dem Taxi vom Bahnhof zur Location (~10 km)."
+    },
+    "parking": {
+      "title": "Parken",
+      "description": "Kostenlose Parkplätze sind vorhanden – bitte vor Ort auf die Beschilderung achten."
+    }
+  },
+
+  "_comment_accommodation": "ACCOMMODATION",
+  "accommodation": {
+    "title": "Unterkunft",
+    "subtitle": "Übernachtung",
+    "descriptionPrimary": "Wir empfehlen die Übernachtung direkt vor Ort.<br />Unter unserem Namen ist bis zum <strong>{{date}}</strong> ein Zimmerkontingent reserviert.<br />Bitte nehmt die Buchung individuell vor.",
+    "bookOnSite": "Zimmer vor Ort buchen",
+    "descriptionSecondary": "Alternativ empfehlen wir eine Übernachtung in <strong>Bautzen</strong> oder <strong>Dresden</strong>."
+  },
+
+    "_comment_timeline": "TIMELINE",
+    "timeline": {
+    "title": "Tagesablauf",
+    "subtitle": "Besondere Momente des Tages",
+    "events": {
+      "arrival": "Ankunft",
+      "ceremony": "Trauung",
+      "toast": "Sektempfang",
+      "coffeeCake": "Kaffee & Kuchen",
+      "drinksGames": "Getränke & Spiele",
+      "dinner": "Abendessen",
+      "party": "Party"
+    }
+  },
+
+    "_comment_dressCode": "DRESS CODE",
+    "dressCode": {
+    "title": "Dresscode",
+    "subtitle": "Was ihr tragen könnt",
+    "intro": "Der Dresscode für unsere Hochzeit ist <strong>Semi-formell</strong>.<br />Wir freuen uns sehr, wenn ihr an unserem besonderen Tag <strong>helle Farben</strong> tragt.",
+    "men": "Anzüge oder Stoffhosen mit einem farbigen Hemd und/oder einer Krawatte",
+    "women": "Cocktailkleider oder elegante Zweiteiler in einer schönen Farbe",
+    "note": "<strong>Bitte beachtet:</strong> Die Trauung findet draußen auf Rasen statt, anschließend feiern wir drinnen weiter."
+  },
+
+  "_comment_gifts": "GIFTS",
+  "gifts": {
+    "title": "Geschenke",
+    "subtitle": "Eure Anwesenheit ist unser größtes Geschenk",
+    "description": "Wenn ihr uns trotzdem etwas schenken möchtet, freuen wir uns sehr über einen Beitrag für unsere Reisekasse!"
+  },
+
+"_comment_contact": "CONTACT",
+  "contact": {
+    "title": "Kontakt",
+    "subtitle": "Wir helfen euch gerne",
+    "intro": "Bei Fragen könnt ihr euch jederzeit direkt an Nele oder Luis wenden.<br />Für die Koordination von Hochzeitsspielen und Aktivitäten wendet euch bitte an:",
+    "maidOfHonor": "Trauzeugin",
+    "bestMan": "Trauzeuge"
+  },
+
+  "_comment_rsvp": "RSVP FORM",
+  "rsvp": {
+    "title": "RSVP",
+    "subtitle": "Wir hoffen, ihr könnt dabei sein",
+    "deadline": "Bitte gebt uns bis zum {{date}} Bescheid.",
+    "attendance": {
+      "label": "Seid ihr dabei?",
+      "yes": "Ja",
+      "no": "Nein",
+      "sadMessage": "Wir werden euch vermissen, aber wir freuen uns darauf, euch bald wiederzusehen!"
+    },
+    "fields": {
+      "fullNameSingleLabel": "Vollständiger Name",
+      "fullNamePerson1Label": "Vollständiger Name (Person 1)",
+      "fullNamePerson2Label": "Vollständiger Name (Person 2)",
+      "fullNamePlaceholder": "Vor- und Nachname",
+      "person2Placeholder": "Partner/in oder Begleitung hinzufügen (optional)",
+      "funFactPerson1Label": "Fun Fact (Person 1)",
+      "funFactPerson2Label": "Fun Fact (Person 2)",
+      "funFactPlaceholder": "Erzählt uns einen Fun Fact über euch! Wir nutzen das für ein Überraschungsspiel am Tag.",
+      "allergiesLabel": "Allergien und Ernährungsbesonderheiten",
+      "allergiesPlaceholder": "Bitte angeben...",
+      "songWishLabel": "Euer Musikwunsch für die Party",
+      "songWishPlaceholder": "Songtitel und Interpret/in"
+    },
+    "validation": {
+      "selectOne": "Bitte wähle eine Option",
+      "required": "Pflichtfeld",
+      "requiredField": "Dieses Feld ist erforderlich",
+      "requiredIfPerson2": "Erforderlich, wenn Person 2 angegeben ist"
+    },
+    "submit": {
+      "sending": "Wird gesendet...",
+      "sendConfirmation": "✉️ Zusage senden"
+    },
+    "errors": {
+      "generic": "Es ist ein Fehler aufgetreten. Bitte versucht es erneut."
+    },
+    "success": {
+      "title": "Danke!",
+      "message": "Deine Antwort ist angekommen. Wir freuen uns darauf, mit dir zu feiern!",
+      "back": "Zurück zum Anfang"
+    }
+  },
+
+
+"_comment_footer": "FOOTER",
+  "footer": {
+    "madeWithLove": "Mit <heart /> selbstgemacht für unsere Hochzeit"
+  }
+
+
+
+}

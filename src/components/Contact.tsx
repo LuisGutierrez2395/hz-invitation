@@ -1,8 +1,11 @@
-import React from 'react';
-import { Section } from './Section';
-import { UserPen } from 'lucide-react';
+import React from "react";
+import { Section } from "./Section";
+import { UserPen } from "lucide-react";
+import { useTranslation, Trans } from "react-i18next";
 
 export const Contact: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <Section id="contact" className="text-center" withPattern>
       <div className="flex justify-center mb-4">
@@ -10,33 +13,35 @@ export const Contact: React.FC = () => {
       </div>
 
       <h2 className="font-script text-4xl text-primary mb-2">
-        Contact
+        {t("contact.title")}
       </h2>
+
       <p className="font-sans text-text/60 mb-6 uppercase tracking-widest text-xs">
-        Happy to help
+        {t("contact.subtitle")}
       </p>
 
       <p className="font-serif text-lg text-text max-w-xl mx-auto mb-6">
-        For any questions, don't hesitate to reach out to Nele or Luis directly. 
-        <br />
-        To help coordinate wedding games and activities, please contact:
+        <Trans
+          i18nKey="contact.intro"
+          components={{ br: <br /> }}
+        />
       </p>
 
       <p className="font-serif text-lg text-text max-w-xl mx-auto">
-        <strong>Maid of honor:</strong>{' '}
+        <strong>{t("contact.maidOfHonor")}:</strong>{" "}
         <a
-          href="tel:+491762819394"
+          href="tel:+4915783217817"
           className="hover:text-primary transition-colors"
         >
-          Laura González (+49 15783217817)
+          Laura González (+49 157 83217817)
         </a>
         <br />
-        <strong>Best man:</strong>{' '}
+        <strong>{t("contact.bestMan")}:</strong>{" "}
         <a
-          href="tel:+49176731678"
+          href="tel:+4917662057204"
           className="hover:text-primary transition-colors"
         >
-          Piero Navarrete (+49 17662057204)
+          Piero Navarrete (+49 176 62057204)
         </a>
       </p>
     </Section>

@@ -2,6 +2,7 @@ import React from "react";
 import { useCountdown } from "../hooks/useCountdown";
 import { Section } from "./Section";
 import { Hourglass } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 const TimeUnit = ({ value, label }: { value: number; label: string }) => (
   <div className="flex flex-col items-center mx-2 md:mx-4">
@@ -17,6 +18,8 @@ const TimeUnit = ({ value, label }: { value: number; label: string }) => (
 );
 
 export const Countdown: React.FC = () => {
+  const { t } = useTranslation();
+
   // Target Date: June 20, 2026 at 15:00
   const targetDate = new Date("2026-06-20T15:00:00");
   const { days, hours, minutes, seconds } = useCountdown(targetDate);
@@ -31,20 +34,20 @@ export const Countdown: React.FC = () => {
       {/* Title + Subtitle */}
       <div className="text-center mb-10">
         <h2 className="font-script text-4xl text-primary mb-2">
-          Countdown
+          {t("countdown.title")}
         </h2>
         <p className="font-sans text-text/60 uppercase tracking-widest text-xs">
-          Time until the big day
+          {t("countdown.subtitle")}
         </p>
       </div>
 
       {/* Countdown Box */}
       <div className="bg-white/50 rounded-3xl p-8 mx-4 md:mx-0 shadow-sm border border-white/40">
         <div className="flex justify-center flex-wrap gap-y-4">
-          <TimeUnit value={days} label="Days" />
-          <TimeUnit value={hours} label="Hours" />
-          <TimeUnit value={minutes} label="Minutes" />
-          <TimeUnit value={seconds} label="Seconds" />
+          <TimeUnit value={days} label={t("countdown.days")} />
+          <TimeUnit value={hours} label={t("countdown.hours")} />
+          <TimeUnit value={minutes} label={t("countdown.minutes")} />
+          <TimeUnit value={seconds} label={t("countdown.seconds")} />
         </div>
       </div>
     </Section>

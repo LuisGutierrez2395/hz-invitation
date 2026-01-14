@@ -3,19 +3,29 @@ import { useForm } from "react-hook-form";
 import { supabase } from "../supabase";
 import { Section } from "./Section";
 import type { RsvpFormData } from "../types";
-import { MailQuestionMark, Loader2, CheckCircle, AlertCircle } from "lucide-react";
+import {
+  MailQuestionMark,
+  Loader2,
+  CheckCircle,
+  AlertCircle
+} from "lucide-react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const RSVPForm: React.FC = () => {
+  const { t } = useTranslation();
+
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
   const [errorMessage, setErrorMessage] = useState("");
 
   const {
     register,
     handleSubmit,
     watch,
-    formState: { errors },
+    formState: { errors }
   } = useForm<RsvpFormData>();
 
   const asistiraValue = watch("asistira");
@@ -36,14 +46,20 @@ export const RSVPForm: React.FC = () => {
         // If NO -> store nombre_completo as the single "Full Name" required
         // If YES -> person 1 required, person 2 optional
         nombre_completo: (data.nombre_completo ?? "").trim() || null,
-        nombre_completo_2: isYes ? ((data.nombre_completo_2 ?? "").trim() || null) : null,
+        nombre_completo_2: isYes
+          ? ((data.nombre_completo_2 ?? "").trim() || null)
+          : null,
 
         otras_alergias: isYes ? ((data.otras_alergias ?? "").trim() || null) : null,
         cancion_deseada: isYes ? ((data.cancion_deseada ?? "").trim() || null) : null,
 
         // new columns (recommended)
-        fun_fact_person_1: isYes ? ((data.fun_fact_person_1 ?? "").trim() || null) : null,
-        fun_fact_person_2: isYes && hasPerson2 ? ((data.fun_fact_person_2 ?? "").trim() || null) : null,
+        fun_fact_person_1: isYes
+          ? ((data.fun_fact_person_1 ?? "").trim() || null)
+          : null,
+        fun_fact_person_2: isYes && hasPerson2
+          ? ((data.fun_fact_person_2 ?? "").trim() || null)
+          : null,
 
         // legacy columns you no longer use
         email: null,
@@ -51,7 +67,7 @@ export const RSVPForm: React.FC = () => {
         vegetariano: false,
         sin_gluten: false,
         vegano: false,
-        sin_lactosa: false,
+        sin_lactosa: false
       };
 
       const { error } = await supabase.from("rsvp_responses").insert([payload]);
@@ -61,7 +77,7 @@ export const RSVPForm: React.FC = () => {
     } catch (error) {
       console.error("Error submitting RSVP:", error);
       setSubmitStatus("error");
-      setErrorMessage((error as Error).message || "There was an error. Please, try again.");
+      setErrorMessage((error as Error).message || t("rsvp.errors.generic"));
     } finally {
       setIsSubmitting(false);
     }
@@ -79,19 +95,20 @@ export const RSVPForm: React.FC = () => {
             <CheckCircle className="w-16 h-16 text-green-500" />
           </div>
 
-          {/* Match section heading style */}
-          <h2 className="font-script text-4xl text-primary mb-2">Thanks!</h2>
+          <h2 className="font-script text-4xl text-primary mb-2">
+            {t("rsvp.success.title")}
+          </h2>
 
-          {/* Match softer body text tone used elsewhere */}
           <p className="font-sans text-text/80 mb-6">
-            Your confirmation has been received. We look forward to celebrating with you!
+            {t("rsvp.success.message")}
           </p>
 
           <button
+            type="button"
             onClick={() => window.location.reload()}
             className="text-primary underline font-sans text-sm hover:text-primary/80"
           >
-            Go back to start
+            {t("rsvp.success.back")}
           </button>
         </motion.div>
       </Section>
@@ -105,9 +122,11 @@ export const RSVPForm: React.FC = () => {
       </div>
 
       <div className="text-center mb-10">
-        <h2 className="font-script text-4xl text-primary mb-2">RSVP</h2>
+        <h2 className="font-script text-4xl text-primary mb-2">
+          {t("rsvp.title")}
+        </h2>
         <p className="font-sans text-text/60 uppercase tracking-widest text-xs">
-          We hope you can join us
+          {t("rsvp.subtitle")}
         </p>
       </div>
 
@@ -117,36 +136,45 @@ export const RSVPForm: React.FC = () => {
       >
         {/* Deadline notice */}
         <p className="text-left font-sans font-bold text-text mb-6">
-          Please answer until 31.03.2026.
+          {t("rsvp.deadline", { date: "31.03.2026" })}
         </p>
+
         {/* Attendance */}
         <div className="space-y-2">
-          <label className="block font-serif text-lg text-text">Will you be there?</label>
+          <label className="block font-serif text-lg text-text">
+            {t("rsvp.attendance.label")}
+          </label>
 
           <div className="space-y-2">
             <label className="flex items-center space-x-3 cursor-pointer p-3 border border-transparent hover:bg-secondary/30 rounded transition-colors">
               <input
-                {...register("asistira", { required: "Please select one" })}
+                {...register("asistira", { required: t("rsvp.validation.selectOne") })}
                 type="radio"
                 value="si"
                 className="text-primary focus:ring-primary h-4 w-4"
               />
-              <span className="font-sans text-text">Yes</span>
+              <span className="font-sans text-text">
+                {t("rsvp.attendance.yes")}
+              </span>
             </label>
 
             <label className="flex items-center space-x-3 cursor-pointer p-3 border border-transparent hover:bg-secondary/30 rounded transition-colors">
               <input
-                {...register("asistira", { required: "Please select one" })}
+                {...register("asistira", { required: t("rsvp.validation.selectOne") })}
                 type="radio"
                 value="no"
                 className="text-primary focus:ring-primary h-4 w-4"
               />
-              <span className="font-sans text-text">No</span>
+              <span className="font-sans text-text">
+                {t("rsvp.attendance.no")}
+              </span>
             </label>
           </div>
 
           {errors.asistira && (
-            <span className="text-red-500 text-xs font-sans">{errors.asistira.message}</span>
+            <span className="text-red-500 text-xs font-sans">
+              {errors.asistira.message}
+            </span>
           )}
         </div>
 
@@ -157,21 +185,21 @@ export const RSVPForm: React.FC = () => {
             animate={{ height: "auto", opacity: 1 }}
             className="space-y-6 pt-4 border-t border-primary/10"
           >
-            {/* Sad message (match body text font + tone) */}
             <p className="font-sans text-lg text-text/80 text-center">
-              We’ll miss having you there, but we can't wait to catch up with you soon!
+              {t("rsvp.attendance.sadMessage")}
             </p>
 
-            {/* Full Name (required) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Full name</label>
+              <label className="block font-serif text-lg text-text">
+                {t("rsvp.fields.fullNameSingleLabel")}
+              </label>
               <input
                 {...register("nombre_completo", {
-                  validate: (v) => (!!v?.trim() ? true : "Required"),
+                  validate: (v) => (!!v?.trim() ? true : t("rsvp.validation.required"))
                 })}
                 type="text"
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="First and last name"
+                placeholder={t("rsvp.fields.fullNamePlaceholder")}
               />
               {errors.nombre_completo && (
                 <span className="text-red-500 text-xs font-sans">
@@ -191,30 +219,36 @@ export const RSVPForm: React.FC = () => {
           >
             {/* Person 1 (required) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Full name (Person 1)</label>
+              <label className="block font-serif text-lg text-text">
+                {t("rsvp.fields.fullNamePerson1Label")}
+              </label>
               <input
                 {...register("nombre_completo", {
-                  validate: (v) => (!!v?.trim() ? true : "Required"),
+                  validate: (v) => (!!v?.trim() ? true : t("rsvp.validation.required"))
                 })}
                 type="text"
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="First and last name"
+                placeholder={t("rsvp.fields.fullNamePlaceholder")}
               />
               {errors.nombre_completo && (
-                <span className="text-red-500 text-xs font-sans">{errors.nombre_completo.message}</span>
+                <span className="text-red-500 text-xs font-sans">
+                  {errors.nombre_completo.message}
+                </span>
               )}
             </div>
 
             {/* Fun fact person 1 (required) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Fun fact (Person 1)</label>
+              <label className="block font-serif text-lg text-text">
+                {t("rsvp.fields.funFactPerson1Label")}
+              </label>
               <textarea
                 {...register("fun_fact_person_1", {
-                  validate: (v) => !!v?.trim() || "This field is required",
+                  validate: (v) => !!v?.trim() || t("rsvp.validation.requiredField")
                 })}
                 rows={3}
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="Give us a fun fact about you! We’re using these for a surprise game that day."
+                placeholder={t("rsvp.fields.funFactPlaceholder")}
               />
               {errors.fun_fact_person_1 && (
                 <span className="text-red-500 text-xs font-sans">
@@ -225,62 +259,71 @@ export const RSVPForm: React.FC = () => {
 
             {/* Person 2 (optional) */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Full name (Person 2)</label>
+              <label className="block font-serif text-lg text-text">
+                {t("rsvp.fields.fullNamePerson2Label")}
+              </label>
               <input
                 {...register("nombre_completo_2")}
                 type="text"
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="Add partner or plus one (optional)"
+                placeholder={t("rsvp.fields.person2Placeholder")}
               />
             </div>
 
             {/* Fun fact person 2 (required if person 2 name is filled) */}
             <div className="space-y-1">
               <label className="block font-serif text-lg text-text">
-                Fun fact (Person 2){person2Name?.trim() ? " *" : ""}
+                {t("rsvp.fields.funFactPerson2Label")}
+                {person2Name?.trim() ? " *" : ""}
               </label>
               <textarea
                 {...register("fun_fact_person_2", {
                   validate: (v) => {
-                    if (!person2Name?.trim()) return true; // not required if no person2
-                    return !!v?.trim() || "Required if Person 2 is provided";
-                  },
+                    if (!person2Name?.trim()) return true;
+                    return !!v?.trim() || t("rsvp.validation.requiredIfPerson2");
+                  }
                 })}
                 rows={3}
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="Give us a fun fact about you! We’re using these for a surprise game that day."
+                placeholder={t("rsvp.fields.funFactPlaceholder")}
               />
               {errors.fun_fact_person_2 && (
-                <span className="text-red-500 text-xs font-sans">{errors.fun_fact_person_2.message}</span>
+                <span className="text-red-500 text-xs font-sans">
+                  {errors.fun_fact_person_2.message}
+                </span>
               )}
             </div>
 
             {/* Allergies */}
             <div className="space-y-1">
-              <label className="block font-serif text-lg text-text">Allergies and dietary restrictions</label>
+              <label className="block font-serif text-lg text-text">
+                {t("rsvp.fields.allergiesLabel")}
+              </label>
               <textarea
                 {...register("otras_alergias")}
                 rows={3}
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="Please specify..."
+                placeholder={t("rsvp.fields.allergiesPlaceholder")}
               />
             </div>
 
             {/* Song wish (required) */}
             <div className="space-y-1">
               <label className="block font-serif text-lg text-text">
-                Your song wish for the party
+                {t("rsvp.fields.songWishLabel")}
               </label>
               <textarea
                 {...register("cancion_deseada", {
-                  validate: (v) => (!!v?.trim() ? true : "Required"),
+                  validate: (v) => (!!v?.trim() ? true : t("rsvp.validation.required"))
                 })}
                 rows={3}
                 className="w-full px-4 py-2 border border-primary/20 rounded focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary/50 bg-secondary/30"
-                placeholder="Song title and artist"
+                placeholder={t("rsvp.fields.songWishPlaceholder")}
               />
               {errors.cancion_deseada && (
-                <span className="text-red-500 text-xs font-sans">{errors.cancion_deseada.message}</span>
+                <span className="text-red-500 text-xs font-sans">
+                  {errors.cancion_deseada.message}
+                </span>
               )}
             </div>
           </motion.div>
@@ -303,10 +346,10 @@ export const RSVPForm: React.FC = () => {
           {isSubmitting ? (
             <>
               <Loader2 className="animate-spin" />
-              Sending...
+              {t("rsvp.submit.sending")}
             </>
           ) : (
-            "✉️ Send confirmation"
+            t("rsvp.submit.sendConfirmation")
           )}
         </button>
       </form>
