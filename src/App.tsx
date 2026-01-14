@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 
@@ -16,8 +16,8 @@ import { Contact } from "./components/Contact";
 import { DressCode } from "./components/DressCode";
 import { Directions } from "./components/Directions";
 
-type Lang = "en" | "de";
 type Phase = "choose" | "envelope" | "content";
+type Lang = "en" | "de";
 
 const LANG_CONFIRMED_KEY = "lang_confirmed";
 
@@ -30,11 +30,6 @@ function App() {
   });
 
   const [startSignal, setStartSignal] = useState(0);
-
-  const current = useMemo(() => {
-    const lng = (i18n.resolvedLanguage ?? i18n.language ?? "en") as Lang;
-    return lng === "de" ? "de" : "en";
-  }, [i18n.language, i18n.resolvedLanguage]);
 
   const startEnvelope = () => {
     setPhase("envelope");
@@ -50,7 +45,6 @@ function App() {
     startEnvelope();
   };
 
-  // If language was previously confirmed, start envelope once on load
   useEffect(() => {
     const confirmed = localStorage.getItem(LANG_CONFIRMED_KEY) === "1";
     if (confirmed) {
@@ -123,7 +117,6 @@ function App() {
       {/* Main content */}
       {phase === "content" && (
         <>
-          {/* Top-right in-app language switcher */}
           <LanguageSwitcher />
 
           <motion.main
