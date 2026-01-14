@@ -58,7 +58,7 @@ export const Directions: React.FC = () => {
               Travel time: ~60–75 min
             </p>
             <p className="font-serif text-lg text-text mt-2">
-              Take RE1/RB60 from Dresden until Bautzen and take a taxi from Bautzen station to location (~10 km).
+              Take RE1/RB60 from Dresden until Bautzen and take a taxi from Bautzen station to location (~10km).
             </p>
           </div>
         </div>

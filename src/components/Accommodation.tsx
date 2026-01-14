@@ -17,7 +17,9 @@ export const Accommodation: React.FC = () => {
       </p>
 
       <p className="font-serif text-lg text-text max-w-xl mx-auto mb-6">
-        We recommend the on-site rooms at the location. A quota has been reserved under our name until <strong>31.03.2026</strong>. Please make your bookings individually.
+        We recommend the on-site rooms at the location. A quota has been reserved under our name until <strong>31.03.2026</strong>. 
+        <br />
+        Please make your bookings individually.
       </p>
 
       <div className="flex justify-center mb-6">

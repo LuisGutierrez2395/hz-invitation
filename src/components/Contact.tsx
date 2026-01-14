@@ -18,6 +18,7 @@ export const Contact: React.FC = () => {
 
       <p className="font-serif text-lg text-text max-w-xl mx-auto mb-6">
         For any questions, don't hesitate to reach out to Nele or Luis directly. 
+        <br />
         To help coordinate wedding games and activities, please contact:
       </p>
 
@@ -27,7 +28,7 @@ export const Contact: React.FC = () => {
           href="tel:+491762819394"
           className="hover:text-primary transition-colors"
         >
-          Laura González (+49 1578 3217817)
+          Laura González (+49 15783217817)
         </a>
         <br />
         <strong>Best man:</strong>{' '}
@@ -35,7 +36,7 @@ export const Contact: React.FC = () => {
           href="tel:+49176731678"
           className="hover:text-primary transition-colors"
         >
-          Piero Navarrete (+49 176 62057204)
+          Piero Navarrete (+49 17662057204)
         </a>
       </p>
     </Section>

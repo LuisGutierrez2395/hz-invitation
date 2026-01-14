@@ -1,10 +1,16 @@
-import React from 'react';
-import { motion } from 'framer-motion';
-import { Section } from './Section';
+import React from "react";
+import { motion } from "framer-motion";
+import { ChevronDown } from "lucide-react";
+import { Section } from "./Section";
 
 export const Hero: React.FC = () => {
+  const scrollToRSVP = () => {
+    const el = document.getElementById("rsvp");
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
+
   return (
-    <Section className="text-center pt-20 pb-10 min-h-screen flex flex-col justify-center items-center">
+    <Section className="text-center pt-20 pb-10 min-h-screen flex flex-col justify-center items-center relative">
       <div className="border-2 border-primary/30 p-8 md:p-16 relative max-w-2xl w-full">
         {/* Decorative corners */}
         <div className="absolute top-[-10px] left-[-10px] w-20 h-20 border-t-2 border-l-2 border-primary/50" />
@@ -12,7 +18,7 @@ export const Hero: React.FC = () => {
         <div className="absolute bottom-[-10px] left-[-10px] w-20 h-20 border-b-2 border-l-2 border-primary/50" />
         <div className="absolute bottom-[-10px] right-[-10px] w-20 h-20 border-b-2 border-r-2 border-primary/50" />
 
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
@@ -20,8 +26,8 @@ export const Hero: React.FC = () => {
         >
           We are getting married!
         </motion.p>
-        
-        <motion.h1 
+
+        <motion.h1
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
@@ -30,25 +36,14 @@ export const Hero: React.FC = () => {
           Nele <span className="text-accent">&</span> Luis
         </motion.h1>
 
-        <motion.div 
+        <motion.div
           initial={{ scaleX: 0 }}
           animate={{ scaleX: 1 }}
           transition={{ delay: 1, duration: 0.8 }}
-          className="h-px w-24 bg-accent mx-auto my-6" 
+          className="h-px w-24 bg-accent mx-auto my-6"
         />
 
-        {/*
-        <motion.p 
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.2 }}
-          className="font-sans uppercase tracking-[0.2em] text-sm md:text-base text-text/80"
-        >
-          ¡Nos casamos!
-        </motion.p>
-        */}
-        
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.4 }}
@@ -57,6 +52,34 @@ export const Hero: React.FC = () => {
           20.06.2026
         </motion.p>
       </div>
+
+
+
+
+      {/* RSVP Scroll Button (integrated) */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1.8 }}
+        className="mt-10 flex flex-col items-center gap-3"
+      >
+        <button
+          type="button"
+          onClick={scrollToRSVP}
+          className="
+            group flex flex-col items-center gap-2
+            text-primary hover:text-primary/80
+            transition-colors
+          "
+          aria-label="Scroll to RSVP section"
+        >
+          <span className="font-script text-4xl text-primary mb-2">
+            RSVP
+          </span>
+
+          <ChevronDown className="w-8 h-8 animate-bounce" />
+        </button>
+      </motion.div>
     </Section>
   );
 };
