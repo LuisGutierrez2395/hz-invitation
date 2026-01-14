@@ -1,20 +1,19 @@
 {
-
-    "_comment_envelope": "ENVELOPE",
-    "envelope": {
-    "tagline": "We are getting married!",
+  "_comment_envelope": "ENVELOPE",
+  "envelope": {
+    "tagline": "¡Nos casamos!",
     "date": "20 . 06 . 2026"
   },
 
   "_comment_common": "Shared labels used across multiple components",
   "common": {
-    "rsvp": "RSVP"
+    "rsvp": "Confirmar asistencia"
   },
 
   "_comment_hero": "HERO Section",
   "hero": {
-    "tagline": "We are getting married!",
-    "scrollToRsvpAria": "Scroll to RSVP section",
+    "tagline": "¡Nos casamos!",
+    "scrollToRsvpAria": "Desplazarse a la sección de confirmación de asistencia",
     "couple": {
       "left": "Nele",
       "right": "Luis"
@@ -23,155 +22,152 @@
 
   "_comment_countdown": "COUNTDOWN Section",
   "countdown": {
-    "title": "Countdown",
-    "subtitle": "Time until the big day",
-    "days": "Days",
-    "hours": "Hours",
-    "minutes": "Minutes",
-    "seconds": "Seconds"
+    "title": "Cuenta regresiva",
+    "subtitle": "Tiempo restante para el gran día",
+    "days": "Días",
+    "hours": "Horas",
+    "minutes": "Minutos",
+    "seconds": "Segundos"
   },
 
   "_comment_venue": "VENUE Section",
   "venue": {
-    "title": "Location",
-    "subtitle": "Where we celebrate with you",
+    "title": "Lugar",
+    "subtitle": "Dónde celebraremos contigo",
     "timeDisplay": "3:00 pm",
-    "gettingThere": "Getting there",
-    "addToCalendar": "Add to Calendar",
+    "gettingThere": "Cómo llegar",
+    "addToCalendar": "Añadir al calendario",
     "calendarEvent": {
-      "title": "Wedding Nele & Luis",
-      "location": "Bildungsgut Schmochtitz Sankt Benno, Bautzen, Germany",
-      "description": "We are getting married! We are excited to celebrate with you!",
+      "title": "Boda Nele & Luis",
+      "location": "Bildungsgut Schmochtitz Sankt Benno, Bautzen, Alemania",
+      "description": "¡Nos casamos! ¡Estamos muy felices de poder celebrarlo contigo!",
       "filename": "wedding-Nele-Luis.ics"
     }
   },
- 
+
   "_comment_directions": "DIRECTIONS",
   "directions": {
-    "title": "Directions",
-    "subtitle": "How to arrive",
-    "travelTimeLabel": "Travel time",
+    "title": "Cómo llegar",
+    "subtitle": "Indicaciones para llegar al lugar",
+    "travelTimeLabel": "Tiempo de viaje",
     "byCarFromDresden": {
-      "title": "By car from Dresden",
+      "title": "En auto desde Dresden",
       "travelTime": "~45–60 min",
-      "description": "Take A4 until exit Salzenforst, follow signage to Schmochtitz."
+      "description": "Toma la autopista A4 hasta la salida Salzenforst y sigue las indicaciones hacia Schmochtitz."
     },
     "byCarFromBautzen": {
-      "title": "By car from Bautzen",
+      "title": "En auto desde Bautzen",
       "travelTime": "~10–15 min",
-      "description": "Take S111 until Dreistern, turn right onto S106, follow signage to Schmochtitz."
+      "description": "Toma la S111 hasta Dreistern, gira a la derecha en la S106 y sigue las indicaciones hacia Schmochtitz."
     },
     "byTrainFromDresden": {
-      "title": "By train from Dresden",
+      "title": "En tren desde Dresden",
       "travelTime": "~60–75 min",
-      "description": "Take RE1/RB60 from Dresden until Bautzen and take a taxi from Bautzen station to location (~10km)."
+      "description": "Toma el RE1/RB60 desde Dresden hasta Bautzen y luego un taxi desde la estación de Bautzen hasta el lugar (~10km)."
     },
     "parking": {
-      "title": "Parking",
-      "description": "Free parking is available, look for signage on site."
+      "title": "Estacionamiento",
+      "description": "Hay Estacionamiento gratuito disponible; solo sigue las indicaciones en el lugar."
     }
   },
 
   "_comment_accommodation": "ACCOMMODATION",
   "accommodation": {
-    "title": "Accommodation",
-    "subtitle": "Where to stay",
-    "descriptionPrimary": "We recommend the on-site rooms at the location.<br />A quota has been reserved under our name until <strong>{{date}}</strong>.<br />Please make your bookings individually.",
-    "bookOnSite": "Book on-site rooms",
-    "descriptionSecondary": "Otherwise, we recommend staying in <strong>Bautzen</strong> or <strong>Dresden</strong>."
+    "title": "Alojamiento",
+    "subtitle": "Dónde hospedarse",
+    "descriptionPrimary": "Recomendamos las habitaciones del propio lugar.<br />Hemos reservado un cupo a nuestro nombre hasta el <strong>{{date}}</strong>.<br />Por favor, realiza la reserva de forma individual.",
+    "bookOnSite": "Reserva habitaciones en el recinto",
+    "descriptionSecondary": "Como alternativa, recomendamos hospedarse en <strong>Bautzen</strong> o <strong>Dresden</strong>."
   },
 
-    "_comment_timeline": "TIMELINE",
-    "timeline": {
-    "title": "Timeline",
-    "subtitle": "Special moments of the day",
+  "_comment_timeline": "TIMELINE",
+  "timeline": {
+    "title": "Programa",
+    "subtitle": "Momentos especiales del día",
     "events": {
-      "arrival": "Arrival",
-      "ceremony": "Wedding ceremony",
-      "toast": "Toast",
-      "coffeeCake": "Coffee & Cake",
-      "drinksGames": "Drinks & Games",
-      "dinner": "Dinner",
-      "party": "Party"
+      "arrival": "Llegada",
+      "ceremony": "Ceremonia de boda",
+      "toast": "Brindis",
+      "coffeeCake": "Café y pastel",
+      "drinksGames": "Juegos y bebidas",
+      "dinner": "Cena",
+      "party": "Fiesta"
     }
   },
 
   "_comment_dressCode": "DRESS CODE",
   "dressCode": {
-    "title": "Dress code",
-    "subtitle": "What to wear",
-    "intro": "The dress code for our wedding is <strong>semi-formal</strong>.<br />We kindly encourage you to wear <strong>bright colours</strong> for our special day.",
-    "men": "Suits or slacks with a colourful shirt and/or tie",
-    "women": "Cocktail dresses or dressy separates in a nice colour",
-    "note": "<strong>Please note:</strong> Our wedding ceremony will take place outdoors on grass, followed by an indoor reception."
+    "title": "Código de vestimenta",
+    "subtitle": "Qué ponerte",
+    "intro": "El código de vestimenta para nuestra boda es <strong>semi-formal</strong>.<br />Te animamos a llevar <strong>colores claros</strong> para nuestro día especial.",
+    "men": "Traje o pantalón de vestir con camisa y/o corbata de color",
+    "women": "Vestidos de cóctel o conjuntos elegantes en un bonito color",
+    "note": "<strong>Nota:</strong> La ceremonia será al aire libre sobre césped, y luego continuaremos con una recepción en interior."
   },
 
   "_comment_gifts": "GIFTS",
   "gifts": {
-    "title": "Gifts",
-    "subtitle": "Your presence is our greatest gift",
-    "description": "If you still would like to give us a present, a contribution towards our travel funds would be highly appreciated!"
+    "title": "Regalos",
+    "subtitle": "Tu presencia es nuestro mejor regalo",
+    "description": "Si aun así deseas hacernos un regalo, ¡agradeceremos mucho una contribución para nuestro fondo de viajes!"
   },
 
   "_comment_contact": "CONTACT",
   "contact": {
-    "title": "Contact",
-    "subtitle": "Happy to help",
-    "intro": "For any questions, don't hesitate to reach out to Nele or Luis directly.<br />To help coordinate wedding games and activities, please contact:",
-    "maidOfHonor": "Maid of honor",
-    "bestMan": "Best man"
+    "title": "Contacto",
+    "subtitle": "Estamos para ayudarte",
+    "intro": "Si tienes alguna pregunta, no dudes en contactar directamente a Nele o Luis.<br />Para coordinar juegos y actividades durante la boda, por favor comunícate con:",
+    "maidOfHonor": "Dama de honor",
+    "bestMan": "Padrino de boda"
   },
+
   "_comment_rsvp": "RSVP FORM",
   "rsvp": {
-    "title": "RSVP",
-    "subtitle": "We hope you can join us",
-    "deadline": "Please answer until {{date}}.",
+    "title": "Confirmación de asistencia",
+    "subtitle": "Esperamos que puedas acompañarnos",
+    "deadline": "Por favor responde antes del {{date}}.",
     "attendance": {
-      "label": "Will you be there?",
-      "yes": "Yes",
+      "label": "¿Asistirás?",
+      "yes": "Sí",
       "no": "No",
-      "sadMessage": "We’ll miss having you there, but we can't wait to catch up with you soon!"
+      "sadMessage": "Te echaremos de menos, ¡pero esperamos verte pronto!"
     },
     "fields": {
-      "fullNameSingleLabel": "Full name",
-      "fullNamePerson1Label": "Full name (Person 1)",
-      "fullNamePerson2Label": "Full name (Person 2)",
-      "fullNamePlaceholder": "First and last name",
-      "person2Placeholder": "Add partner or plus one (optional)",
-      "funFactPerson1Label": "Fun fact (Person 1)",
-      "funFactPerson2Label": "Fun fact (Person 2)",
-      "funFactPlaceholder": "Give us a fun fact about you! We’re using these for a surprise game that day.",
-      "allergiesLabel": "Allergies and dietary restrictions",
-      "allergiesPlaceholder": "Please specify...",
-      "songWishLabel": "Your song wish for the party",
-      "songWishPlaceholder": "Song title and artist"
+      "fullNameSingleLabel": "Nombre completo",
+      "fullNamePerson1Label": "Nombre completo (Persona 1)",
+      "fullNamePerson2Label": "Nombre completo (Persona 2)",
+      "fullNamePlaceholder": "Nombre y apellidos",
+      "person2Placeholder": "Agregar pareja o acompañante (opcional)",
+      "funFactPerson1Label": "Dato curioso (Persona 1)",
+      "funFactPerson2Label": "Dato curioso (Persona 2)",
+      "funFactPlaceholder": "¡Cuéntanos un dato curioso sobre ti! Los usaremos para un juego sorpresa.",
+      "allergiesLabel": "Alergias y/o restricciones alimentarias",
+      "allergiesPlaceholder": "Por favor, especifica...",
+      "songWishLabel": "¿Qué canción no debería faltar?",
+      "songWishPlaceholder": "Nombre de la canción y artista"
     },
     "validation": {
-      "selectOne": "Please select one",
-      "required": "Required",
-      "requiredField": "This field is required",
-      "requiredIfPerson2": "Required if Person 2 is provided"
+      "selectOne": "Por favor, selecciona una opción",
+      "required": "Obligatorio",
+      "requiredField": "Este campo es obligatorio",
+      "requiredIfPerson2": "Obligatorio si agregas una Persona 2"
     },
     "submit": {
-      "sending": "Sending...",
-      "sendConfirmation": "✉️ Send confirmation"
+      "sending": "Enviando...",
+      "sendConfirmation": "✉️ Enviar confirmación"
     },
     "errors": {
-      "generic": "There was an error. Please, try again."
+      "generic": "Ha ocurrido un error. Por favor, inténtalo de nuevo."
     },
     "success": {
-      "title": "Thanks!",
-      "message": "Your confirmation has been received. We look forward to celebrating with you!",
-      "back": "Go back to start"
+      "title": "¡Gracias!",
+      "message": "Hemos recibido tu confirmación. ¡Estamos muy emocionados de celebrar contigo!",
+      "back": "Volver al inicio"
     }
   },
 
- "_comment_footer": "FOOTER",
+  "_comment_footer": "FOOTER",
   "footer": {
-    "madeWithLove": "Self-made with <heart /> for our wedding"
+    "madeWithLove": "Hecho por nosotros mismos con <heart /> para nuestra boda"
   }
-
-
-
-
 }

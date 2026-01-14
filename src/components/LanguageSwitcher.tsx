@@ -34,7 +34,7 @@ export const LanguageSwitcher: React.FC = () => {
         aria-pressed={current === "en"}
         className={buttonClass(current === "en")}
       >
-        English
+        ES
       </button>
 
       <button
@@ -43,7 +43,7 @@ export const LanguageSwitcher: React.FC = () => {
         aria-pressed={current === "de"}
         className={buttonClass(current === "de")}
       >
-        Deutsch
+        DE
       </button>
     </div>
   );

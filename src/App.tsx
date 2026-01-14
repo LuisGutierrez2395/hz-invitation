@@ -74,7 +74,7 @@ function App() {
         <div className="fixed inset-0 z-[60] flex items-center justify-center pointer-events-none">
           <div className="pointer-events-auto bg-white/75 border border-primary/10 shadow-lg rounded-2xl p-8 mx-4 w-full max-w-sm text-center backdrop-blur-sm">
             <h2 className="font-script text-4xl text-primary mb-3">
-              Choose language
+              Selecciona el idioma / Sprache wählen
             </h2>
 
             <div className="flex flex-col gap-3 mt-6">
@@ -91,7 +91,7 @@ function App() {
                   active:bg-primary/90
                 "
               >
-                English
+                Español
               </button>
 
               <button
