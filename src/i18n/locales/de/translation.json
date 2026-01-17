@@ -21,7 +21,7 @@
   "_comment_countdown": "COUNTDOWN",
   "countdown": {
     "title": "Countdown",
-    "subtitle": "Zeit bis zum großen Tag",
+    "subtitle": "Verbleibende Zeit",
     "days": "Tage",
     "hours": "Stunden",
     "minutes": "Minuten",
@@ -72,7 +72,7 @@
   "_comment_accommodation": "ACCOMMODATION",
   "accommodation": {
     "title": "Unterkunft",
-    "subtitle": "Übernachtung",
+    "subtitle": "Wo ihr übernachten könnt",
     "descriptionPrimary": "Wir empfehlen die Übernachtung direkt vor Ort.<br />Unter unserem Namen ist bis zum <strong>{{date}}</strong> ein Zimmerkontingent reserviert.<br />Bitte nehmt die Buchung individuell vor.",
     "bookOnSite": "Zimmer vor Ort buchen",
     "descriptionSecondary": "Alternativ empfehlen wir eine Übernachtung in <strong>Bautzen</strong> oder <strong>Dresden</strong>."
@@ -87,7 +87,7 @@
       "ceremony": "Trauung",
       "toast": "Sektempfang",
       "coffeeCake": "Kaffee & Kuchen",
-      "drinksGames": "Getränke & Spiele",
+      "drinksGames": "Drinks & Games",
       "dinner": "Abendessen",
       "party": "Party"
     }
@@ -96,9 +96,9 @@
     "_comment_dressCode": "DRESS CODE",
     "dressCode": {
     "title": "Dresscode",
-    "subtitle": "Was ihr tragen könnt",
-    "intro": "Der Dresscode für unsere Hochzeit ist <strong>Semi-formell</strong>.<br />Wir freuen uns sehr, wenn ihr an unserem besonderen Tag <strong>helle Farben</strong> tragt.",
-    "men": "Anzüge oder Stoffhosen mit einem farbigen Hemd und/oder einer Krawatte",
+    "subtitle": "Wie ihr euch kleiden könnt",
+    "intro": "Der Dresscode für unsere Hochzeit ist <strong>semi-formel</strong>.<br />Wir freuen uns sehr, wenn ihr an unserem besonderen Tag <strong>leuchtende Farben</strong> tragt.",
+    "men": "Anzüge oder Stoffhosen mit einem farbigen Hemd und/oder Krawatte",
     "women": "Cocktailkleider oder elegante Zweiteiler in einer schönen Farbe",
     "note": "<strong>Bitte beachtet:</strong> Die Trauung findet draußen auf Rasen statt, anschließend feiern wir drinnen weiter."
   },
@@ -135,10 +135,10 @@
       "fullNamePerson1Label": "Vollständiger Name (Person 1)",
       "fullNamePerson2Label": "Vollständiger Name (Person 2)",
       "fullNamePlaceholder": "Vor- und Nachname",
-      "person2Placeholder": "Partner/in oder Begleitung hinzufügen (optional)",
+      "person2Placeholder": "Partner/in oder Begleitung (optional)",
       "funFactPerson1Label": "Fun Fact (Person 1)",
       "funFactPerson2Label": "Fun Fact (Person 2)",
-      "funFactPlaceholder": "Erzählt uns einen Fun Fact über euch! Wir nutzen das für ein Überraschungsspiel am Tag.",
+      "funFactPlaceholder": "Für ein Überraschungsspiel brauchen wir einen Fun Fact über euch.",
       "allergiesLabel": "Allergien und Ernährungsbesonderheiten",
       "allergiesPlaceholder": "Bitte angeben...",
       "songWishLabel": "Euer Musikwunsch für die Party",
@@ -152,7 +152,7 @@
     },
     "submit": {
       "sending": "Wird gesendet...",
-      "sendConfirmation": "✉️ Zusage senden"
+      "sendConfirmation": "✉️ Abschicken"
     },
     "errors": {
       "generic": "Es ist ein Fehler aufgetreten. Bitte versucht es erneut."

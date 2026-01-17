@@ -48,7 +48,7 @@
   "_comment_directions": "DIRECTIONS",
   "directions": {
     "title": "Cómo llegar",
-    "subtitle": "Indicaciones para llegar al lugar",
+    "subtitle": "Indicaciones para llegar",
     "travelTimeLabel": "Tiempo de viaje",
     "byCarFromDresden": {
       "title": "En auto desde Dresden",
