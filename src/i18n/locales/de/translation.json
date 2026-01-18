@@ -95,7 +95,7 @@
       "drinksGames": "Drinks & Games",
       "dinnerTime": "19:30",
       "dinner": "Abendessen",
-      "partyTime": "21:00",
+      "partyTime": "21:30",
       "party": "Party"
     }
   },
@@ -114,7 +114,7 @@
   "gifts": {
     "title": "Geschenke",
     "subtitle": "Unser größtes Geschenk ist eure Anwesenheit",
-    "description": "Wenn ihr uns trotzdem eine Freude machen möchtet, freuen wir uns sehr über einen Betrag für unsere Reisekasse 💸💰!"
+    "description": "Wenn ihr uns trotzdem eine Freude machen möchtet, freuen wir uns sehr über einen Betrag für unsere Reisekasse!"
   },
 
 "_comment_contact": "CONTACT",
@@ -122,8 +122,8 @@
     "title": "Kontakt",
     "subtitle": "Wir helfen euch gerne",
     "intro": "Bei Fragen könnt ihr euch jederzeit direkt an Nele oder Luis wenden.<br />Für die Koordination von Hochzeitsspielen und Aktivitäten wendet euch bitte an:",
-    "maidOfHonor": "👩🏻‍💼 Trauzeugin",
-    "bestMan": "👨🏻‍💼 Trauzeuge"
+    "maidOfHonor": "Trauzeugin",
+    "bestMan": "Trauzeuge"
   },
 
   "_comment_rsvp": "RSVP FORM",

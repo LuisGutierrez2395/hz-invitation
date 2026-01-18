@@ -88,14 +88,14 @@
       "arrivalTime": "2:45 pm",
       "arrival": "Llegada",
       "ceremonyTime": "3:00 pm",
-      "ceremony": "Ceremonia de boda",
-      "toastTime": "4:00 pm",
+      "ceremony": "Ceremonia",
+      "toastTime": "3:30 pm",
       "toast": "Brindis",
       "coffeeCakeTime": "4:00 pm",
       "coffeeCake": "Café y pastel",
       "drinksGamesTime": "4:30 pm",
       "drinksGames": "Juegos y bebidas",
-      "dinnerTime": "9:30 pm",
+      "dinnerTime": "7:30 pm",
       "dinner": "Cena",
       "partyTime": "9:30 pm",
       "party": "Fiesta"
@@ -116,7 +116,7 @@
   "gifts": {
     "title": "Regalos",
     "subtitle": "Tu presencia es nuestro mejor regalo",
-    "description": "Si aun así deseas darnos algo, ¡agradeceremos mucho una contribución para nuestro fondo de viajes 💸💰!"
+    "description": "Si aun así deseas darnos algo, ¡agradeceremos mucho una contribución para nuestro fondo de viajes 💵!"
   },
 
   "_comment_contact": "CONTACT",
