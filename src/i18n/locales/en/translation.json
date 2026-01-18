@@ -22,8 +22,8 @@
 
   "_comment_countdown": "COUNTDOWN Section",
   "countdown": {
-    "title": "Cuenta regresiva",
-    "subtitle": "Tiempo restante para el gran día",
+    "title": "Countdown",
+    "subtitle": "Tiempo restante",
     "days": "Días",
     "hours": "Horas",
     "minutes": "Minutos",
@@ -63,11 +63,11 @@
     "byTrainFromDresden": {
       "title": "En tren desde Dresden",
       "travelTime": "~60–75 min",
-      "description": "Toma el RE1/RB60 desde Dresden hasta Bautzen y luego un taxi desde la estación de Bautzen hasta el lugar (~10km)."
+      "description": "Toma el RE1/RB60 desde Dresden hasta Bautzen y luego un taxi desde la estación de Bautzen hasta el lugar (~10 km)."
     },
     "parking": {
       "title": "Estacionamiento",
-      "description": "Hay Estacionamiento gratuito disponible; solo sigue las indicaciones en el lugar."
+      "description": "Hay estacionamiento gratuito disponible - solo sigue las indicaciones en el lugar."
     }
   },
 
@@ -76,7 +76,7 @@
     "title": "Alojamiento",
     "subtitle": "Dónde hospedarse",
     "descriptionPrimary": "Recomendamos las habitaciones del propio lugar.<br />Hemos reservado un cupo a nuestro nombre hasta el <strong>{{date}}</strong>.<br />Por favor, realiza la reserva de forma individual.",
-    "bookOnSite": "Reserva habitaciones en el recinto",
+    "bookOnSite": "Reservar habitación",
     "descriptionSecondary": "Como alternativa, recomendamos hospedarse en <strong>Bautzen</strong> o <strong>Dresden</strong>."
   },
 
@@ -85,19 +85,26 @@
     "title": "Programa",
     "subtitle": "Momentos especiales del día",
     "events": {
+      "arrivalTime": "2:45 pm",
       "arrival": "Llegada",
+      "ceremonyTime": "3:00 pm",
       "ceremony": "Ceremonia de boda",
+      "toastTime": "4:00 pm",
       "toast": "Brindis",
+      "coffeeCakeTime": "4:00 pm",
       "coffeeCake": "Café y pastel",
+      "drinksGamesTime": "4:30 pm",
       "drinksGames": "Juegos y bebidas",
+      "dinnerTime": "9:30 pm",
       "dinner": "Cena",
+      "partyTime": "9:30 pm",
       "party": "Fiesta"
     }
   },
 
   "_comment_dressCode": "DRESS CODE",
   "dressCode": {
-    "title": "Código de vestimenta",
+    "title": "Dress code",
     "subtitle": "Qué ponerte",
     "intro": "El código de vestimenta para nuestra boda es <strong>semi-formal</strong>.<br />Te animamos a llevar <strong>colores claros</strong> para nuestro día especial.",
     "men": "Traje o pantalón de vestir con camisa y/o corbata de color",
@@ -109,7 +116,7 @@
   "gifts": {
     "title": "Regalos",
     "subtitle": "Tu presencia es nuestro mejor regalo",
-    "description": "Si aun así deseas hacernos un regalo, ¡agradeceremos mucho una contribución para nuestro fondo de viajes!"
+    "description": "Si aun así deseas darnos algo, ¡agradeceremos mucho una contribución para nuestro fondo de viajes 💸💰!"
   },
 
   "_comment_contact": "CONTACT",
@@ -140,7 +147,7 @@
       "person2Placeholder": "Agregar pareja o acompañante (opcional)",
       "funFactPerson1Label": "Dato curioso (Persona 1)",
       "funFactPerson2Label": "Dato curioso (Persona 2)",
-      "funFactPlaceholder": "¡Cuéntanos un dato curioso sobre ti! Los usaremos para un juego sorpresa.",
+      "funFactPlaceholder": "¡Cuéntanos un dato curioso sobre ti! Lo usaremos para un juego sorpresa.",
       "allergiesLabel": "Alergias y/o restricciones alimentarias",
       "allergiesPlaceholder": "Por favor, especifica...",
       "songWishLabel": "¿Qué canción no debería faltar?",
@@ -154,7 +161,7 @@
     },
     "submit": {
       "sending": "Enviando...",
-      "sendConfirmation": "✉️ Enviar confirmación"
+      "sendConfirmation": "✉️ Enviar"
     },
     "errors": {
       "generic": "Ha ocurrido un error. Por favor, inténtalo de nuevo."

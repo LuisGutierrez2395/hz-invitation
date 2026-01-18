@@ -83,21 +83,28 @@
     "title": "Tagesablauf",
     "subtitle": "Besondere Momente des Tages",
     "events": {
+      "arrivalTime": "14:45",
       "arrival": "Ankunft",
+      "ceremonyTime": "15:00",
       "ceremony": "Trauung",
+      "toastTime": "15:30",
       "toast": "Sektempfang",
+      "coffeeCakeTime": "16:00",
       "coffeeCake": "Kaffee & Kuchen",
+      "drinksGamesTime": "16:30",
       "drinksGames": "Drinks & Games",
+      "dinnerTime": "19:30",
       "dinner": "Abendessen",
+      "partyTime": "21:00",
       "party": "Party"
     }
   },
 
     "_comment_dressCode": "DRESS CODE",
     "dressCode": {
-    "title": "Dresscode",
+    "title": "Dress Code",
     "subtitle": "Das könnt ihr anziehen",
-    "intro": "Der Dresscode für unsere Hochzeit ist <strong>semi-formel</strong>.<br />Wir freuen uns sehr, wenn ihr an unserem besonderen Tag <strong>leuchtende Farben</strong> tragt.",
+    "intro": "Der Dresscode für unsere Hochzeit ist <strong>semi-formal</strong>.<br />Wir freuen uns sehr, wenn ihr an unserem besonderen Tag <strong>leuchtende Farben</strong> tragt.",
     "men": "Anzüge oder Stoffhosen mit einem farbigen Hemd und/oder Krawatte",
     "women": "Cocktailkleider oder elegante Zweiteiler in einer schönen Farbe",
     "note": "<strong>Bitte beachtet:</strong> Die Trauung findet draußen auf Rasen statt, anschließend feiern wir drinnen weiter."
@@ -107,7 +114,7 @@
   "gifts": {
     "title": "Geschenke",
     "subtitle": "Unser größtes Geschenk ist eure Anwesenheit",
-    "description": "Wenn ihr uns trotzdem etwas schenken möchtet, freuen wir uns sehr über einen Beitrag für unsere Reisekasse!"
+    "description": "Wenn ihr uns trotzdem eine Freude machen möchtet, freuen wir uns sehr über einen Betrag für unsere Reisekasse 💸💰!"
   },
 
 "_comment_contact": "CONTACT",
@@ -115,8 +122,8 @@
     "title": "Kontakt",
     "subtitle": "Wir helfen euch gerne",
     "intro": "Bei Fragen könnt ihr euch jederzeit direkt an Nele oder Luis wenden.<br />Für die Koordination von Hochzeitsspielen und Aktivitäten wendet euch bitte an:",
-    "maidOfHonor": "Trauzeugin",
-    "bestMan": "Trauzeuge"
+    "maidOfHonor": "👩🏻‍💼 Trauzeugin",
+    "bestMan": "👨🏻‍💼 Trauzeuge"
   },
 
   "_comment_rsvp": "RSVP FORM",
@@ -139,7 +146,7 @@
       "funFactPerson1Label": "Fun Fact (Person 1)",
       "funFactPerson2Label": "Fun Fact (Person 2)",
       "funFactPlaceholder": "Für ein Überraschungsspiel brauchen wir einen Fun Fact über euch.",
-      "allergiesLabel": "Allergien und Besonderheiten bei der Ernährung",
+      "allergiesLabel": "Allergien und/oder Besonderheiten bei der Ernährung",
       "allergiesPlaceholder": "Bitte angeben...",
       "songWishLabel": "Euer Musikwunsch für die Party",
       "songWishPlaceholder": "Songtitel und Interpret/in"

@@ -17,13 +17,13 @@ export const Timeline: React.FC = () => {
   const { t } = useTranslation();
 
   const events = [
-    { time: "2:45 pm", key: "arrival", icon: DoorOpen },
-    { time: "3:00 pm", key: "ceremony", icon: Heart },
-    { time: "3:30 pm", key: "toast", icon: Martini },
-    { time: "4:00 pm", key: "coffeeCake", icon: CakeSlice },
-    { time: "4:30 pm", key: "drinksGames", icon: Camera },
-    { time: "7:30 pm", key: "dinner", icon: Utensils },
-    { time: "9:30 pm", key: "party", icon: Music }
+    { timeKey: "arrivalTime", labelKey: "arrival", icon: DoorOpen },
+    { timeKey: "ceremonyTime", labelKey: "ceremony", icon: Heart },
+    { timeKey: "toastTime", labelKey: "toast", icon: Martini },
+    { timeKey: "coffeeCakeTime", labelKey: "coffeeCake", icon: CakeSlice },
+    { timeKey: "drinksGamesTime", labelKey: "drinksGames", icon: Camera },
+    { timeKey: "dinnerTime", labelKey: "dinner", icon: Utensils },
+    { timeKey: "partyTime", labelKey: "party", icon: Music }
   ];
 
   return (
@@ -53,7 +53,7 @@ export const Timeline: React.FC = () => {
 
             return (
               <motion.div
-                key={event.key}
+                key={event.labelKey}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
@@ -62,7 +62,7 @@ export const Timeline: React.FC = () => {
                 {/* Time Badge */}
                 <div className="mb-2 md:mb-6 bg-white/80 md:bg-secondary px-3 py-1 rounded-full border border-primary/20 shadow-sm md:shadow-none md:border-transparent">
                   <span className="font-serif text-lg md:text-xl text-primary font-bold">
-                    {event.time}
+                    {t(`timeline.events.${event.timeKey}`)}
                   </span>
                 </div>
 
@@ -73,7 +73,7 @@ export const Timeline: React.FC = () => {
 
                 {/* Title */}
                 <span className="font-sans text-base md:text-sm font-medium text-text">
-                  {t(`timeline.events.${event.key}`)}
+                  {t(`timeline.events.${event.labelKey}`)}
                 </span>
               </motion.div>
             );
