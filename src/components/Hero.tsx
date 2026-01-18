@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { ChevronDown } from "lucide-react";
+import { MailQuestionMark } from "lucide-react";
 import { Section } from "./Section";
 import { useTranslation } from "react-i18next";
 
@@ -57,28 +57,29 @@ export const Hero: React.FC = () => {
         </motion.p>
       </div>
 
-      {/* RSVP Scroll Button (integrated) */}
+      {/* RSVP Button (styled like Accommodation button) */}
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1.8 }}
-        className="mt-10 flex flex-col items-center gap-3"
+        className="mt-10 flex justify-center"
       >
         <button
           type="button"
           onClick={scrollToRSVP}
-          className="
-            group flex flex-col items-center gap-2
-            text-primary hover:text-primary/80
-            transition-colors
-          "
           aria-label={t("hero.scrollToRsvpAria")}
+          className="
+            px-6 py-2
+            bg-primary text-white
+            font-sans text-sm
+            rounded-full
+            hover:bg-primary/90
+            transition-colors
+            flex items-center gap-2
+          "
         >
-          <span className="font-script text-4xl text-primary mb-2">
-            {t("common.rsvp")}
-          </span>
-
-          <ChevronDown className="w-8 h-8 animate-bounce" />
+          <MailQuestionMark size={16} />
+          {t("common.rsvp")}
         </button>
       </motion.div>
     </Section>

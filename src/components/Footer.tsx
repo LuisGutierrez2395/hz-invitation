@@ -5,11 +5,17 @@ import { Trans } from "react-i18next";
 export const Footer: React.FC = () => {
   return (
     <footer className="py-12 text-center bg-secondary/50 border-t border-primary/10 mt-12">
-      <div className="flex justify-center mb-4">
-        <Heart size={24} className="text-primary/40 fill-primary/10" />
+      <div className="flex justify-center mb-1">
+        <img
+          src="/alpacas.png"
+          alt="Wedding emblem"
+          className="w-24 h-24 object-contain opacity-70 block"
+        />
       </div>
 
-      <h2 className="font-script text-3xl text-primary mb-2">Nele & Luis</h2>
+      <h2 className="font-script text-3xl text-primary mb-2">
+        Nele & Luis
+      </h2>
       <p className="font-sans text-xs text-text/60 mb-6 uppercase tracking-widest">
         20.06.2026
       </p>

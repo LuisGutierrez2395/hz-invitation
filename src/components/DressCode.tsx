@@ -34,7 +34,7 @@ export const DressCode: React.FC = () => {
             <Mars className="w-5 h-5 text-primary mt-1" />
             <span>{t("dressCode.men")}</span>
 
-            <Venus className="w-5 h-5 text-primary mt-1" />
+            <Venus className="w-5 h-5 text-accent mt-1" />
             <span>{t("dressCode.women")}</span>
           </div>
         </div>

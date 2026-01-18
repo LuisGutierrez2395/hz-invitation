@@ -110,10 +110,16 @@ export const Envelope: React.FC<EnvelopeProps> = ({
                 className="absolute top-0 w-full h-0 border-l-[192px] border-r-[192px] border-t-[140px] border-l-transparent border-r-transparent border-t-[#b6cdbd] z-20 flex justify-center"
               >
                 {/* Wax Seal */}
-                <div className="absolute -top-[100px] w-20 h-20 rounded-full bg-[#c24d2c] shadow-lg flex items-center justify-center border-4 border-[#b6cdbd]/30">
-                  <span className="font-script text-white text-3xl pt-1">
-                    N&L
-                  </span>
+                <div className="absolute -top-[100px] w-25 h-25 rounded-full bg-[#c46a51] shadow-lg flex items-center justify-center border-4 border-[#b6cdbd]/30">
+                  <img
+                    src="/alpacas.png"
+                    alt="Wedding seal"
+                      className="
+                      w-30 h-30 object-contain
+                      drop-shadow-[0_0_2px_white]
+                      drop-shadow-[0_0_4px_white]
+                    "
+                  />
                 </div>
               </motion.div>
             </motion.div>

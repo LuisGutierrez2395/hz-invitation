@@ -72,7 +72,7 @@
   "_comment_accommodation": "ACCOMMODATION",
   "accommodation": {
     "title": "Unterkunft",
-    "subtitle": "Wo ihr übernachten könnt",
+    "subtitle": "Hier könnt ihr übernachten",
     "descriptionPrimary": "Wir empfehlen die Übernachtung direkt vor Ort.<br />Unter unserem Namen ist bis zum <strong>{{date}}</strong> ein Zimmerkontingent reserviert.<br />Bitte nehmt die Buchung individuell vor.",
     "bookOnSite": "Zimmer vor Ort buchen",
     "descriptionSecondary": "Alternativ empfehlen wir eine Übernachtung in <strong>Bautzen</strong> oder <strong>Dresden</strong>."
@@ -96,7 +96,7 @@
     "_comment_dressCode": "DRESS CODE",
     "dressCode": {
     "title": "Dresscode",
-    "subtitle": "Wie ihr euch kleiden könnt",
+    "subtitle": "Das könnt ihr anziehen",
     "intro": "Der Dresscode für unsere Hochzeit ist <strong>semi-formel</strong>.<br />Wir freuen uns sehr, wenn ihr an unserem besonderen Tag <strong>leuchtende Farben</strong> tragt.",
     "men": "Anzüge oder Stoffhosen mit einem farbigen Hemd und/oder Krawatte",
     "women": "Cocktailkleider oder elegante Zweiteiler in einer schönen Farbe",
@@ -106,7 +106,7 @@
   "_comment_gifts": "GIFTS",
   "gifts": {
     "title": "Geschenke",
-    "subtitle": "Eure Anwesenheit ist unser größtes Geschenk",
+    "subtitle": "Unser größtes Geschenk ist eure Anwesenheit",
     "description": "Wenn ihr uns trotzdem etwas schenken möchtet, freuen wir uns sehr über einen Beitrag für unsere Reisekasse!"
   },
 
@@ -139,7 +139,7 @@
       "funFactPerson1Label": "Fun Fact (Person 1)",
       "funFactPerson2Label": "Fun Fact (Person 2)",
       "funFactPlaceholder": "Für ein Überraschungsspiel brauchen wir einen Fun Fact über euch.",
-      "allergiesLabel": "Allergien und Ernährungsbesonderheiten",
+      "allergiesLabel": "Allergien und Besonderheiten bei der Ernährung",
       "allergiesPlaceholder": "Bitte angeben...",
       "songWishLabel": "Euer Musikwunsch für die Party",
       "songWishPlaceholder": "Songtitel und Interpret/in"
