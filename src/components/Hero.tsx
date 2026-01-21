@@ -56,32 +56,6 @@ export const Hero: React.FC = () => {
           20.06.2026
         </motion.p>
       </div>
-
-      {/* RSVP Button (styled like Accommodation button) */}
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.8 }}
-        className="mt-10 flex justify-center"
-      >
-        <button
-          type="button"
-          onClick={scrollToRSVP}
-          aria-label={t("hero.scrollToRsvpAria")}
-          className="
-            px-6 py-2
-            bg-primary text-white
-            font-sans text-sm
-            rounded-full
-            hover:bg-primary/90
-            transition-colors
-            flex items-center gap-2
-          "
-        >
-          <MailQuestionMark size={16} />
-          {t("common.rsvp")}
-        </button>
-      </motion.div>
     </Section>
   );
 };
