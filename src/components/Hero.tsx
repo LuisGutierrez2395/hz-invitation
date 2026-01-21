@@ -1,16 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { MailQuestionMark } from "lucide-react";
 import { Section } from "./Section";
 import { useTranslation } from "react-i18next";
 
 export const Hero: React.FC = () => {
   const { t } = useTranslation();
-
-  const scrollToRSVP = () => {
-    const el = document.getElementById("rsvp");
-    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
-  };
 
   return (
     <Section className="text-center pt-20 pb-10 min-h-screen flex flex-col justify-center items-center relative">
