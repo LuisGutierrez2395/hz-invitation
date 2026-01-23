@@ -47,7 +47,7 @@
 
   "_comment_directions": "DIRECTIONS",
   "directions": {
-    "title": "Cómo llegar",
+    "title": "Direcciones",
     "subtitle": "Indicaciones para llegar",
     "travelTimeLabel": "Tiempo de viaje",
     "byCarFromDresden": {
@@ -104,7 +104,7 @@
 
   "_comment_dressCode": "DRESS CODE",
   "dressCode": {
-    "title": "Dress code",
+    "title": "Dress Code",
     "subtitle": "Qué ponerte",
     "intro": "El código de vestimenta para nuestra boda es <strong>semi-formal</strong>.<br />Te animamos a llevar <strong>colores claros</strong> para nuestro día especial.",
     "men": "Traje o pantalón de vestir con camisa y/o corbata de color",
@@ -168,7 +168,7 @@
     },
     "success": {
       "title": "¡Gracias!",
-      "message": "Hemos recibido tu confirmación. ¡Estamos muy emocionados de celebrar contigo!",
+      "message": "Hemos recibido tu respuesta.",
       "back": "Volver al inicio"
     }
   },

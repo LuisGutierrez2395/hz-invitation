@@ -114,7 +114,7 @@
   "gifts": {
     "title": "Geschenke",
     "subtitle": "Unser größtes Geschenk ist eure Anwesenheit",
-    "description": "Wenn ihr uns trotzdem eine Freude machen möchtet, freuen wir uns sehr über einen Betrag für unsere Reisekasse!"
+    "description": "Wenn ihr uns zusätzlich eine Freude machen möchtet, freuen wir uns sehr über einen Betrag für unsere Reisekasse!"
   },
 
 "_comment_contact": "CONTACT",
@@ -166,7 +166,7 @@
     },
     "success": {
       "title": "Danke!",
-      "message": "Deine Antwort ist angekommen. Wir freuen uns darauf, mit dir zu feiern!",
+      "message": "Deine Antwort ist angekommen.",
       "back": "Zurück zum Anfang"
     }
   },
