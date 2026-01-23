@@ -128,7 +128,7 @@
 
   "_comment_rsvp": "RSVP FORM",
   "rsvp": {
-    "title": "RSVP",
+    "title": "Rückmeldung",
     "subtitle": "Wir hoffen, ihr könnt dabei sein",
     "deadline": "Bitte gebt uns bis zum {{date}} Bescheid.",
     "attendance": {
